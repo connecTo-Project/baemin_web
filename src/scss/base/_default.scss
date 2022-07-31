@@ -1,0 +1,19 @@
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+body {
+  font-family: -apple-system, Roboto, sans-serif;
+  font: inherit;
+  background-color: #fff;
+}
+
+/* 유연한 미디어 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video,
+iframe {
+  width: 100%;
+  height: auto;
+}
