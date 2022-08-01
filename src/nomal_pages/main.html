@@ -1,131 +1,126 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>어서오세요. 메인</title>
-  </head>
-  <body>
-    <!-- 스킵 내비 -->
-    <a href="#skip" class="skip-nav">헤더 건너뛰기</a>
-    <!-- 헤더 -->
-    <header class="header">
-      <h1 class="header__title">
-        <a href="/"><img src="/" alt="배달의 민족" /></a>
-      </h1>
-      <button>주소</button>
-      <a href="/">메뉴</a>
-      <button>알림</button>
-      <a href="/">마이페이지</a>
-      <form action="">
-        <fieldset>
-          <legend class="sr-only">검색 폼</legend>
-          <label class="sr-only" for="">검색</label>
-          <input type="search" />
-          <button type="submit"></button>
-        </fieldset>
-      </form>
-    </header>
-    <!-- 메인 -->
-    <main>
-      <section>
-        <h2>섹션 제목</h2>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <a href="/"
-            ><h3>아티클 제목</h3>
-            <p>설명</p></a
-          >
-        </article>
-        <article>
-          <h3>광고</h3>
-          <ul>
-            <li><a href="/">광고1</a></li>
-            <li><a href="/">광고2</a></li>
-            <li><a href="/">광고3</a></li>
-          </ul>
-        </article>
-      </section>
-      <ul>
-        <li><a href="/">포인트</a></li>
-        <li><a href="/">쿠폰함</a></li>
-        <li><a href="/">선물함</a></li>
-        <li><a href="/">찜</a></li>
-      </ul>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="/"></a></li>
-        <li><a href="/"></a></li>
-        <li><a href="/"></a></li>
-        <li><a href="/"></a></li>
-      </ul>
-      <address>
-        <span>(주)우아한형제들</span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span><a href="email"></a></span>
-        <span></span>
-        <span><a href="tel"></a></span>
-        <span></span>
-      </address>
-      <p></p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>어서오세요. 메인</title>
+</head>
+
+<body>
+  <!-- 스킵 내비 -->
+  <a href="#skip" class="skip-nav">헤더 건너뛰기</a>
+  <!-- 헤더 -->
+  <header class="header">
+    <h1 class="header__title">
+      <a href="/"><img src="/" alt="배달의 민족" /></a>
+    </h1>
+    <button class="header__addressButton">주소</button>
+    <a class="header__menuLink" href="/">메뉴</a>
+    <button class="header__noticeButton">알림</button>
+    <a class="header__profileLink" href="/">마이페이지</a>
+    <form action="">
+      <fieldset class="header__searchForm">
+        <legend class="sr-only">검색 폼</legend>
+        <label class="sr-only" for="">검색</label>
+        <input class="header__input" type="search" />
+        <button class="header__search" type="submit">돋보기</button>
+      </fieldset>
+    </form>
+  </header>
+  <!-- 메인 -->
+  <main class="main">
+    <section class="main__section">
+      <h2 class="main_title">섹션 제목</h2>
+      <article class="main__baeminOne">
+        <a class="main__oneLink" href="/">
+          <h3>배민1</h3>
+          <p>한 번에 한 집만 빠르게 배달해요!</p>
+        </a>
+      </article>
+      <article class="main__delivery">
+        <a class="main__deliveryLink" href="/">
+          <h3>배달</h3>
+          <p>세상은 넓고 맛집은 많다</p>
+        </a>
+      </article>
+      <article class="main__takeOut">
+        <a class="main__takeOutLink" href="/">
+          <h3>포장</h3>
+          <p>가까운 가게는 직접 가지러 가지요</p>
+        </a>
+      </article>
+      <article class="main__bmart">
+        <a class="main__bmartLink" href="/">
+          <h3>B마트</h3>
+          <p>최대3만원쿠폰 <span class="highlight">5일장 오픈!</span></p>
+        </a>
+      </article>
+      <article class="main__mealkit">
+        <a class="main__mealkitLink" href="/">
+          <h3>밀키트 / 간편식</h3>
+          <p>뚝딱 만드는 근사한 한끼</p>
+        </a>
+      </article>
+      <article class="main__store">
+        <a class="main__storeLink" href="/">
+          <h3>배민 스토어</h3>
+          <p>금/토/일 누구나 <span>1만원</span> 할인!</p>
+        </a>
+      </article>
+      <article class="main__live">
+        <a class="main__liveLink" href="/">
+          <h3>쇼핑라이브</h3>
+        </a>
+      </article>
+      <article class="main__gift">
+        <a class="main__giftLink" href="/">
+          <h3>선물하기</h3>
+        </a>
+      </article>
+      <article class="main__special">
+        <a class="main__specialLink" href="/">
+          <h3>전국별미</h3>
+          <p>닭볶음탕육회팥빵</p>
+        </a>
+      </article>
+      <article class="main__ad">
+        <h3>광고</h3>
+        <ul class="main__adList">
+          <li class="main__adItem"><a href="/">광고2</a></li>
+          <li class="main__adItem"><a href="/">광고1</a></li>
+          <li class="main__adItem"><a href="/">광고3</a></li>
+        </ul>
+      </article>
+    </section>
+    <ul class="main__group">
+      <li class="main__group--point"><a href="/">포인트</a></li>
+      <li class="main__group--coupon"><a href="/">쿠폰함</a></li>
+      <li class="main__group--gift"><a href="/">선물함</a></li>
+      <li class="main__group--like"><a href="/">찜</a></li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__item"><a href="/">사업자정보확인</a></li>
+      <li class="footer__item"><a href="/">이용약관</a></li>
+      <li class="footer__item"><a href="/">전자금융거래이용약관</a></li>
+      <li class="footer__item"><a href="/">개인정보처리방침</a></li>
+    </ul>
+    <address class="footer__address">
+      <span>(주)우아한형제들</span>
+      <span>대표이사 김범준</span>
+      <span>사업자등록번호 120-87-65763</span>
+      <span>통신판매업 서울 송파-0515</span>
+      <span>호스팅서비스제공자 (주)우아한형제들</span>
+      <span><a href="email">cs@woowahan.com</a></span>
+      <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
+      <span>전자금융분쟁처리 <a href="tel">Tel 1600-0987(유료)</a></span>
+      <span>Fax 050-6050-0400</span>
+    </address>
+    <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+  </footer>
+</body>
+
 </html>
