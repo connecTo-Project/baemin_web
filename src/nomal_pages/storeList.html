@@ -9,17 +9,17 @@
   <body>
     <!-- 헤더 -->
     <header class="header">
-      <h1 class="logo">
+      <h1 class="header__logo">
         <a class="logo__link" href="/"><img class="logo__img" src="/" alt="배달의 민족" /></a>
       </h1>
-      <button class="header__button--adress">주소</button>
+      <button class="header__address-button">주소</button>
       <a class="category" href="/" >메뉴</a>
-      <button class="header__alert ">알림</button>
+      <button class="header__alert-button">알림</button>
       <a class="mypage" href="/" >마이페이지</a>
       <form class="search-form" action="">
         <fieldset>
           <legend class="sr-only">검색 폼</legend>
-          <label class="sr-only search-form__label" for="">검색</label>
+          <label class="sr-only" for="">검색</label>
           <input class="search-form__input" type="search" />
           <button class="search-form__button-submit" type="submit"></button>
         </fieldset>
@@ -31,36 +31,36 @@
       <h2 class="sr-only">가게 리스트</h2>
       <nav class="navigation" aria-label="메뉴 목록">
         <ul class="navigation__list">
-          <li><a class="underbar--active navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="underbar--active navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/"></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/"></a></li>
         </ul>
       </nav>
       <nav class="sub-navigation" aria-label="정렬 기준">
         <ul class="sub-navigation__list">
-          <li><a class="selected--active sub-navigation__link" href="/"></a></li>
-          <li><a class="sub-navigation__link" href="/"></a></li>
-          <li><a class="sub-navigation__link" href="/"></a></li>
-          <li><a class="sub-navigation__link" href="/"></a></li>
+          <li class="sub-navigation__item"><a class="selected--active sub-navigation__link" href="/"></a></li>
+          <li class="sub-navigation__item"><a class="sub-navigation__link" href="/"></a></li>
+          <li class="sub-navigation__item"><a class="sub-navigation__link" href="/"></a></li>
+          <li class="sub-navigation__item"><a class="sub-navigation__link" href="/"></a></li>
         </ul>
       </nav>
-      <ul class="store-info__list">
-        <li class="store-info__item">
-          <a class="store-info__link" href="/">
-            <figure class="store-info__img">
+      <ul class="store__list">
+        <li class="store__item">
+          <a class="store__link" href="/">
+            <figure class="store__img">
               <img src="/" alt="" />
             </figure>
             <dl class="store-description">
               <dt class="sr-only">상호명</dt>
               <dd class="store-description__name">피자</dd>
               <dt class="sr-only">별점</dt>
-              <dd class="store-description__rating-star">5.0</dd>
-              <dt class="store-description__ㅡmin-price-label">최소주문금액</dt>
-              <dd class="store-description__ㅡmin-price">15,900원</dd>
+              <dd class="store-description__star">5.0</dd>
+              <dt class="store-description__min-price-label">최소주문금액</dt>
+              <dd class="store-description__min-price">15,900원</dd>
               <dt calss="store-description__delivery-tip-label">배달팁</dt>
               <dd calss="store-description__delivery-tip">0원~1,000원</dd>
               <dt class="sr-only">소요시간</dt>
@@ -87,8 +87,8 @@
         <span>호스팅서비스제공자 (주)우아한형제들</span>
         <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
         <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-        <span>전자금융분쟁처리 Tel <a href="1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
-        <span>Fax <a href="050-6050-0400">050-6050-0400</a></span>
+        <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
+        <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
       </address>
       <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
     </footer>
