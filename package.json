@@ -3,7 +3,7 @@
     "start": "run-p watch server",
     "sass": "sass src/scss/index.scss src/css/index.css",
     "watch": "npm run sass -- --watch",
-    "server": "live-server --port=8090"
+    "server": "live-server src/"
   },
   "devDependencies": {
     "cssnano": "^5.1.12",
