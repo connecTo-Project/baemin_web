@@ -4,120 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>가게 정보</title>
+    <title>매장 상세 페이지</title>
   </head>
   <body>
-    <main>
-      <h2>매장 상세 페이지</h2>
-      <article>
-        <h3 class="sr-only">가게 정보</h3>
-        <div class="">
-          <dl>
+    <main class="store">
+      <h2 class="sr-only">매장 상세 페이지</h2>
+      <article class="store-info">
+        <h3 class="sr-only">매장 정보</h3>
+        <div class="store-info__wrapper">
+          <dl class="store-info__list">
             <dt class="sr-only">상호명</dt>
-            <dd>비스트로피자 서울잠실점</dd>
+            <dd class="store-info__description">비스트로피자 서울잠실점</dd>
             <dt class="sr-only">별점</dt>
-            <dd>5.0</dd>
-            <dt>최근리뷰</dt>
-            <dd>457</dd>
-            <dt>최근사장님댓글</dt>
-            <dd>115</dd>
+            <dd class="store-info__description">5.0</dd>
+            <dt class="store-info__data">최근리뷰</dt>
+            <dd class="store-info__description">457</dd>
+            <dt class="store-info__data">최근사장님댓글</dt>
+            <dd class="store-info__description">115</dd>
           </dl>
-          <ul>
-            <li><button type="button">전화</button></li>
-            <li><button type="button">찜 982</button></li>
-            <li><button type="button">공유</button></li>
+          <ul class="store-more__list">
+            <li class="store-more__item"><button class="store-more__button" type="button">전화</button></li>
+            <li class="store-more__item"><button class="store-more__button" type="button">찜 982</button></li>
+            <li class="store-more__item"><button class="store-more__button" type="button">공유</button></li>
           </ul>
         </div>
-        <button>쿠폰 받기</button>
-        <div>
-          <div role="tablist">
-            <button role="tab" id="button1" aria-selected="true" aria-controls="배달주문">배달주문</button>
-            <button role="tab" id="button2" aria-selected="false" aria-controls="포장/방문주문">포장/방문주문</button>
+        <button class="store__coupon">쿠폰 받기</button>
+        <div class="store-order">
+          <div role="tablist" class="store-order__tablist">
+            <button class="store-order__tab" role="tab" id="tabDelivery" aria-selected="true" aria-controls="panelDelivery">배달주문</button>
+            <button class="store-order__tab" role="tab" id="tabPack" aria-selected="false" aria-controls="panelPack">포장/방문주문</button>
           </div>
-          <!-- 강사님 코드 확인 필요 -->
-          <div id="배달주문" aria-describedby="button1">
-            <dl>
-              <dt>최소주문금액</dt>
-              <dd>15,900원</dd>
-              <dt>결제방법</dt>
-              <dd>~~</dd>
-              <dt>배달시간</dt>
-              <dd>~~~</dd>
-              <dt>배달팁</dt>
-              <dd>~~~</dd>
+          <div class="store-delivery" id="panelDelivery" aria-labelledby="tabDelivery">
+            <dl class="store-delivery__list">
+              <dt class="store-delivery__data">최소주문금액</dt>
+              <dd class="store-delivery__description">15,900원</dd>
+              <dt class="store-delivery__data">결제방법</dt>
+              <dd class="store-delivery__description">~~</dd>
+              <dt class="store-delivery__data">배달시간</dt>
+              <dd class="store-delivery__description">~~~</dd>
+              <dt class="store-delivery__data">배달팁</dt>
+              <dd class="store-delivery__description">~~~</dd>
             </dl>
           </div>
-          <div id="포장/방문주문" aria-describedby="button2">
-            <dl>
-              <dt>최소주문금액</dt>
-              <dd>15,900원</dd>
-              <dt>결제방법</dt>
-              <dd>~~</dd>
-              <dt>배달시간</dt>
-              <dd>~~~</dd>
-              <dt>배달팁</dt>
-              <dd>~~~</dd>
+          <div class="store-pack" id="panelPack" aria-labelledby="tabPack">
+            <dl class="store-pack__list">
+              <dt class="store-pack__data">할인</dt>
+              <dd class="store-pack__description">2,000원</dd>
+              <dt class="store-pack__data">최소주문금액</dt>
+              <dd class="store-pack__description">없음</dd>
+              <dt class="store-pack__data">이용방법</dt>
+              <dd class="store-pack__description">매장, 포장</dd>
             </dl>
           </div>
         </div>
       </article>
-      <div role="">
-        <ul>
-          <li><a href="/">메뉴</a></li>
-          <li><a href="/">정보</a></li>
-          <li><a href="/">리뷰</a></li>
+      <div class="store-detail">
+        <ul class="store-detail__list">
+          <li class="store-detail__item"><a class="store-detail__link" href="/">메뉴</a></li>
+          <li class="store-detail__item"><a class="store-detail__link" href="/">정보</a></li>
+          <li class="store-detail__item"><a class="store-detail__link" href="/">리뷰</a></li>
         </ul>
-        <ul>
-          <li><a href="#id">대표 메뉴</a></li>
-          <li><a href="#id">반반피자</a></li>
-          <li><a href="#id">1+1 세트</a></li>
+        <ul class="store-nav__list">
+          <li class="store-nav__item"><a class="store-nav__move" href="#signature">대표 메뉴</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category1">반반피자</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category2">1+1 세트</a></li>
         </ul>
-        <section>
-          <h3>대표 메뉴</h3>
-          <ul id="#id">
-            <li>
-              <a href="/">
-                <dl>
-                  <dt>(<span lang="en">Best</span>) 페퍼로니피자</dt>
-                  <dd>설명</dd>
-                  <dd>가격</dd>
+        <section class="store-signature">
+          <h3 class="store-signature__title">대표 메뉴</h3>
+          <ul id="signature" class="store-signature__list">
+            <li class="store-signature__item">
+              <a href="/" class="store-signature__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">(<span lang="en">Best</span>) 페퍼로니피자</dt>
+                  <dd class="store-menu__description">설명</dd>
+                  <dd class="store-menu__description">가격</dd>
                 </dl>
-                <figure>
-                  <img src="/" alt="" />
+                <figure class="store-menu__cover">
+                  <img class="store-menu__img" src="/" alt="" />
                 </figure>
               </a>
             </li>
           </ul>
         </section>
-        <details>
-          <summary>세트메뉴</summary>
-          <ul id="#id1">
-            <li>
-              <a href="/">
-                <dl>
-                  <dt>(<span lang="en">Best</span>) 페퍼로니피자</dt>
-                  <dd>설명</dd>
-                  <dd>가격</dd>
+        <details class="store-category">
+          <summary class="store-category__title">반반피자</summary>
+          <ul class="store-category__list" id="#category1">
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">(<span lang="en">Best</span>) 페퍼로니피자</dt>
+                  <dd class="store-menu__description">설명</dd>
+                  <dd class="store-menu__description">가격</dd>
                 </dl>
-                <figure>
-                  <img src="/" alt="" />
+                <figure class="store-menu__cover">
+                  <img class="store-menu__img" src="/" alt="" />
                 </figure>
               </a>
             </li>
           </ul>
         </details>
-        <details>
-          <summary>반반피자</summary>
-          <ul id="#id2">
-            <li>
-              <a href="/">
-                <dl>
-                  <dt>(<span lang="en">Best</span>) 페퍼로니피자</dt>
-                  <dd>설명</dd>
-                  <dd>가격</dd>
+        <details class="store-category">
+          <summary class="store-category__title">1+1 세트메뉴</summary>
+          <ul class="store-category__list" id="#category2">
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">(<span lang="en">Best</span>) 페퍼로니피자</dt>
+                  <dd class="store-menu__description">설명</dd>
+                  <dd class="store-menu__description">가격</dd>
                 </dl>
-                <figure>
-                  <img src="/" alt="" />
+                <figure class="store-menu__cover">
+                  <img class="store-menu__img" src="/" alt="" />
                 </figure>
               </a>
             </li>
