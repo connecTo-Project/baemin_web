@@ -28,6 +28,17 @@
     & .baeminone,
     & .delivery {
       @include size(rem(189px), rem(204px));
+      position: relative;
+    }
+    & .baeminone::after{
+      content: "";
+      width: rem(36px);
+      height: rem(36px);
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      background: url(../../asset/image/ddabong.png) no-repeat 0 0/100%
+
     }
 
     & .togo,
