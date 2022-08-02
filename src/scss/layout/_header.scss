@@ -1,0 +1,104 @@
+@use "../themes" as *;
+@use "../absrtacts" as *;
+body {
+  background: $gray-50;
+  width: rem(428px);
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  font-size: rem(25px);
+  font-family: hanna;
+  // font-weight: 600;
+  // font-family: ;
+}
+p {
+  font-size: rem(16px);
+  line-height: 1.5;
+}
+// br 태그 대신 줄바꿈 하려는 곳에 span 태그에 class줘서 구현
+.br {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+// 스킵네비게이션
+.skip-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 4px 0;
+  color: #fff;
+  transform: translateY(-110%);
+  z-index: 10;
+  & span {
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid #00f;
+    border-radius: 4px;
+  }
+  &:focus {
+    outline: 0;
+    transform: none;
+  }
+}
+
+// 헤더
+.header {
+  background: $mainColor;
+  padding: rem(19px);
+  border-radius: 0 0 20px 20px;
+  display: flow-root;
+  & .nav-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__logo {
+    @include size(rem(120px), rem(38px));
+    background-color: blue;
+  }
+  &__address-button {
+    @include size(rem(120px), rem(32px));
+    background: transparent;
+    border: 0px solid black;
+    margin-top: rem(20px);
+    text-align: left;
+    margin-right: auto;
+  }
+  & .category,
+  &__alert-button,
+  & .mypage {
+    @include size(rem(32px), rem(32px));
+    background: red;
+    border: 0;
+
+    margin-top: rem(20px);
+  }
+  &__alert-button {
+    margin-left: rem(20px);
+    margin-right: rem(20px);
+  }
+
+  & .search-form {
+    position: relative;
+    margin-top: rem(16px);
+  }
+
+  & .search-form__input {
+    width: 100%;
+    min-height: rem(48px);
+    padding-left: rem(33px);
+    border-radius: 3px;
+    border: 0;
+  }
+  & .search-form__button-submit {
+    @include size(rem(45px), rem(45px));
+    position: absolute;
+    top: rem(1px);
+    right: rem(1px);
+    border: 0;
+  }
+}
+
