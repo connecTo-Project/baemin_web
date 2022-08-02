@@ -11,39 +11,41 @@
 
 <body>
   <!-- 스킵 내비 -->
-  <a href="#skip" class="skip-nav">헤더 건너뛰기</a>
+  <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
   <!-- 헤더 -->
   <header class="header">
-    <h1 class="header__title">
-      <a href="/"><img src="/" alt="배달의 민족" /></a>
+    <h1 class="header__logo">
+      <a class="logo__link" href="/"><img class="logo__img" src="/" alt="배달의 민족" /></a>
     </h1>
-    <button class="header__addressButton">주소</button>
-    <a class="header__menuLink" href="/">메뉴</a>
-    <button class="header__noticeButton">알림</button>
-    <a class="header__profileLink" href="/">마이페이지</a>
-    <form action="">
-      <fieldset class="header__searchForm">
+    <div class="nav-wrapper">
+      <button class="header__address-button">우리집</button>
+      <a class="category" href="/">cate</a>
+      <button class="header__alert-button">alert</button>
+      <a class="mypage" href="/">my</a>
+    </div>
+    <form class="search-form" action="">
+      <fieldset>
         <legend class="sr-only">검색 폼</legend>
         <label class="sr-only" for="">검색</label>
-        <input class="header__input" type="search" />
-        <button class="header__search" type="submit">돋보기</button>
+        <input class="search-form__input" placeholder="찾아라! 맛있는 음식과 맛집" type="search" />
+        <button class="search-form__button-submit" type="submit"></button>
       </fieldset>
     </form>
   </header>
   <!-- 메인 -->
   <main class="main">
     <section class="main__section">
-      <h2 class="main__title">섹션 제목</h2>
+      <h2 class="sr-only main__title">섹션 제목</h2>
       <article class="baeminone">
         <a class="baeminone__link" href="/">
           <h3>배민1</h3>
-          <p>한 번에 한 집만 빠르게 배달해요!</p>
+          <p>한 번에 한 집만 <span class="br">빠르게 배달해요!</span></p>
         </a>
       </article>
       <article class="delivery">
         <a class="delivery__link" href="/">
           <h3>배달</h3>
-          <p>세상은 넓고 맛집은 많다</p>
+          <p>세상은 넓고 <span class="br">맛집은 많다</span></p>
         </a>
       </article>
       <article class="togo">
@@ -55,13 +57,13 @@
       <article class="bmart">
         <a class="bmart__link" href="/">
           <h3>B마트</h3>
-          <p>최대3만원쿠폰 <span class="highlight">5일장 오픈!</span></p>
+          <p>최대3만원쿠폰 <span class="br">5일장 오픈!</span></p>
         </a>
       </article>
       <article class="mealkit">
         <a class="mealkit__link" href="/">
           <h3>밀키트 / 간편식</h3>
-          <p>뚝딱 만드는 근사한 한끼</p>
+          <p>뚝딱 만드는<span class="br">근사한 한끼</span></p>
         </a>
       </article>
       <article class="baeminstore">
@@ -87,7 +89,7 @@
         </a>
       </article>
       <article class="ad">
-        <h3>광고</h3>
+        <h3 class="sr-only">광고</h3>
         <ul class="ad__list">
           <li class="ad__item"><a href="/">광고2</a></li>
           <li class="ad__item"><a href="/">광고1</a></li>
@@ -104,21 +106,21 @@
   </main>
   <footer class="footer">
     <ul class="footer__list">
-      <li class="footer__item"><a href="/">사업자정보확인</a></li>
-      <li class="footer__item"><a href="/">이용약관</a></li>
-      <li class="footer__item"><a href="/">전자금융거래이용약관</a></li>
-      <li class="footer__item"><a href="/">개인정보처리방침</a></li>
+      <li><a class="footer__link" href="/">사업자정보확인</a></li>
+      <li><a class="footer__link" href="/">이용약관</a></li>
+      <li><a class="footer__link" href="/">전자금융거래이용약관</a></li>
+      <li><a class="footer__link" href="/">개인정보처리방침</a></li>
     </ul>
-    <address class="footer__address">
+    <address class="adress">
       <span>(주)우아한형제들</span>
       <span>대표이사 김범준</span>
       <span>사업자등록번호 120-87-65763</span>
       <span>통신판매업 서울 송파-0515</span>
       <span>호스팅서비스제공자 (주)우아한형제들</span>
-      <span><a href="email">cs@woowahan.com</a></span>
+      <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
       <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-      <span>전자금융분쟁처리 <a href="tel">Tel 1600-0987(유료)</a></span>
-      <span>Fax 050-6050-0400</span>
+      <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
+      <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
     </address>
     <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
   </footer>

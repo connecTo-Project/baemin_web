@@ -1,0 +1,90 @@
+// 메인
+@use "../themes" as *;
+@use "../absrtacts" as *;
+
+.main {
+  &__section {
+    background: yellow;
+    padding: rem(19px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: rem(14px);
+
+    & article {
+      background: $white;
+      border-radius: 15px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+      & a {
+        padding: rem(17px);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      & a p {
+        margin-top: rem(8px);
+      }
+    }
+    & .baeminone,
+    & .delivery {
+      @include size(rem(189px), rem(204px));
+    }
+
+    & .togo,
+    & .baeminstore {
+      @include size(100%, rem(84px));
+    }
+    & .bmart,
+    & .mealkit {
+      @include size(rem(189px), rem(105));
+    }
+    & .shoppinglive,
+    & .gift {
+      @include size(rem(88px), rem(84px));
+      & h3 {
+        font-size: rem(14px);
+        white-space: nowrap;
+        text-align: center;
+        margin-top: rem(40px);
+      }
+    }
+    & .special {
+      @include size(rem(189px), rem(84px));
+    }
+    & .ad {
+      @include size(100%, rem(130px));
+    }
+  }
+
+  // 멤버
+  & .member {
+    display: flex;
+    flex-flow: row nowrap;
+    background: yellow;
+    justify-content: space-between;
+    padding: 0 rem(19px);
+    text-align: center;
+    &__point {
+      border-radius: 15px 0 0 15px;
+      & a {
+        border-radius: 15px 0 0 15px;
+      }
+    }
+    &__like {
+      border-radius: 0 15px 15px 0;
+      & a {
+        border-radius: 0 15px 15px 0;
+      }
+    }
+    & li {
+      @include size(rem(96px), rem(84px));
+      background: $white;
+      & a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding-top: 60px;
+      }
+    }
+  }
+}
