@@ -11,16 +11,18 @@
 
 <body>
   <!-- 스킵 내비 -->
-  <a href="#skip" class="skip-nav">헤더 건너뛰기</a>
+  <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
   <!-- 헤더 -->
   <header class="header">
     <h1 class="header__logo">
       <a class="logo__link" href="/"><img class="logo__img" src="/" alt="배달의 민족" /></a>
     </h1>
-    <button class="header__address-button">우리집</button>
-    <a class="category" href="/" >cate</a>
-    <button class="header__alert-button">alert</button>
-    <a class="mypage" href="/" >my</a>
+    <div class="nav-wrapper">
+      <button class="header__address-button">우리집</button>
+      <a class="category" href="/">cate</a>
+      <button class="header__alert-button">alert</button>
+      <a class="mypage" href="/">my</a>
+    </div>
     <form class="search-form" action="">
       <fieldset>
         <legend class="sr-only">검색 폼</legend>
