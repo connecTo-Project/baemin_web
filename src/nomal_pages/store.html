@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>매장 상세 페이지</title>
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <main class="store">
@@ -14,9 +15,9 @@
         <div class="store-info__wrapper">
           <dl class="store-info__list">
             <dt class="sr-only">상호명</dt>
-            <dd class="store-info__description">비스트로피자 서울잠실점</dd>
-            <dt class="sr-only">별점</dt>
-            <dd class="store-info__description">5.0</dd>
+            <dd class="store-info__title">얼굴피자 인상점</dd>
+            <dt class="store-info__star"><span class="sr-only">별점</span></dt>
+            <dd class="store-info__ratingstar">5.0</dd>
             <dt class="store-info__data">최근리뷰</dt>
             <dd class="store-info__description">457</dd>
             <dt class="store-info__data">최근사장님댓글</dt>
@@ -28,22 +29,22 @@
             <li class="store-more__item"><button class="store-more__button" type="button">공유</button></li>
           </ul>
         </div>
-        <button class="store__coupon">쿠폰 받기</button>
+        <button class="store__coupon">최대 10,000원 쿠폰 받기</button>
         <div class="store-order">
           <div role="tablist" class="store-order__tablist">
-            <button class="store-order__tab" role="tab" id="tabDelivery" aria-selected="true" aria-controls="panelDelivery">배달주문</button>
+            <button class="store-order__tab selected" role="tab" id="tabDelivery" aria-selected="true" aria-controls="panelDelivery">배달주문</button>
             <button class="store-order__tab" role="tab" id="tabPack" aria-selected="false" aria-controls="panelPack">포장/방문주문</button>
           </div>
           <div class="store-delivery" id="panelDelivery" aria-labelledby="tabDelivery">
             <dl class="store-delivery__list">
               <dt class="store-delivery__data">최소주문금액</dt>
-              <dd class="store-delivery__description">15,900원</dd>
+              <dd class="store-delivery__description">100,900원</dd>
               <dt class="store-delivery__data">결제방법</dt>
-              <dd class="store-delivery__description">~~</dd>
+              <dd class="store-delivery__description">바로결제, 만나서 카드결제,예약가능</dd>
               <dt class="store-delivery__data">배달시간</dt>
-              <dd class="store-delivery__description">~~~</dd>
+              <dd class="store-delivery__description">120~240분 예상</dd>
               <dt class="store-delivery__data">배달팁</dt>
-              <dd class="store-delivery__description">~~~</dd>
+              <dd class="store-delivery__description">10,000원</dd>
             </dl>
           </div>
           <div class="store-pack" id="panelPack" aria-labelledby="tabPack">
@@ -60,13 +61,14 @@
       </article>
       <div class="store-detail">
         <ul class="store-detail__list">
-          <li class="store-detail__item"><a class="store-detail__link" href="/">메뉴</a></li>
-          <li class="store-detail__item"><a class="store-detail__link" href="/">정보</a></li>
-          <li class="store-detail__item"><a class="store-detail__link" href="/">리뷰</a></li>
+          <li class="store-detail__item selected"><a class="store-detail__link" href="#">메뉴</a></li>
+          <li class="store-detail__item"><a class="store-detail__link" href="#">정보</a></li>
+          <li class="store-detail__item"><a class="store-detail__link" href="#">리뷰</a></li>
         </ul>
         <ul class="store-nav__list">
           <li class="store-nav__item"><a class="store-nav__move" href="#signature">대표 메뉴</a></li>
-          <li class="store-nav__item"><a class="store-nav__move" href="#category1">반반피자</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category1">반반 피자</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category1">프리미엄 피자</a></li>
           <li class="store-nav__item"><a class="store-nav__move" href="#category2">1+1 세트</a></li>
         </ul>
         <section class="store-signature">
