@@ -1,0 +1,47 @@
+@use "../themes" as *;
+@use "../absrtacts" as *;
+
+// 푸터
+.footer-inner {
+  padding: rem(19px);
+  // background: $white;
+  margin-top: rem(30px);
+  font-size: rem(12px);
+  & .footer__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    column-gap: rem(12px);
+    & .footer__link {
+      white-space: nowrap;
+    }
+    & li {
+      position: relative;
+    }
+    & li:nth-child(n + 2)::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 90%;
+      background: $gray-100;
+      top: 0;
+      left: -6px;
+    }
+  }
+  & .address {
+    margin-top: rem(20px);
+    & span:nth-child(1){
+      font-size: rem(16px);
+      display: block;
+      margin-bottom: rem(6px);
+    }
+    & span:nth-child(n+2):nth-child(-n+9){
+      display: block;
+      margin-top:rem(3px);
+    }
+  }
+  & p{
+    margin-top: rem(20px);
+    font-size: rem(12px);
+  }
+}
