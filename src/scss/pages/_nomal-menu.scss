@@ -9,7 +9,6 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    background: yellow;
 }
 
 .banner__list{
@@ -28,14 +27,33 @@
     height: 130px;
 }
 
-// 추천 메뉴 광고 
+// 메뉴 추천 광고 
+.recommend{
+    width: 428px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: rem(5px);
+    overflow: hidden;
+    padding-top: rem(15px);
+    padding-bottom: rem(15px);
+}
+
+.recommend__item{
+    margin-left: rem(16px);
+}
+
+.recommend__link{
+    display: block;
+    width: rem(108px);
+    height: rem(84px);
+    border-radius: rem(15px);
+    background: $white;
+    overflow: hidden;
+    text-indent: -9999px;
+}
 
 
 // 메뉴 타입 선택 리스트 
-.main__menu{
-    background: tomato;
-}
-
 .menu-type{
     display: flex;
     flex-direction: row;
@@ -46,10 +64,14 @@
 
 .menu-type__item{
     text-align: center;
+}
+
+.menu-type__link{
+    display: block;
     width: rem(71px);
     height: rem(71px);
-    background-color: $gray-100;
     border-radius: rem(15px);
+    background-color: $gray-50;
 }
 
 .menu-type__text{
@@ -61,4 +83,58 @@
     width: rem(45px);
     height: rem(45px);
     margin-top: rem(2px);
+}
+
+// 추천 가게 리스트 
+.recommend-store__item{
+    width: rem(390px);
+    height: rem(242px);
+    border-radius: rem(15px);
+    background: $white;
+    margin: 13px auto;
+}
+
+.recommend-store__link{
+    display: block;
+    width: 390px;
+    height: 100px;
+    padding-top: 142px;
+    position: relative;
+}
+
+.recommend-store__container dt{
+    display: inline-block;
+}
+
+.recommend-store__container dd{
+    display: inline-block;
+}
+
+.recommend-store__container{
+    margin-left: 15px;
+    margin-top: 18px;
+}
+
+.recommend-store__name{
+    font-size: rem(18px);
+    font-weight: 700;
+    margin-bottom: 14px;
+    display: block;
+    width: fit-content;
+}
+
+.recommend-store__star{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.recommend-store__time{
+    font-size: 12px;
+    border-radius: 20px;
+    background: $gray-50;
+    padding: 5px 5px 5px 20px;
+    position: absolute;
+    top: 160px;
+    right: 15px;
 }
