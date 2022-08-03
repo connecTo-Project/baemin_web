@@ -1,0 +1,6 @@
+$break: 826px;
+@mixin tablet {
+  @media (min-width: $break) {
+    @content;
+  }
+}
