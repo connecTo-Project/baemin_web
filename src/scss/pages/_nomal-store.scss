@@ -5,8 +5,10 @@
   width: rem(428px);
   margin-left: auto;
   margin-right: auto;
-  background: #eee;
-  padding-top: rem(260px);
+  background-image: url("../../asset/image/pizza-store.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: rem(250px);
 
   &-info {
     position: relative;
@@ -19,7 +21,7 @@
     width: rem(390px);
     height: rem(230px);
     border-radius: 5px;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
     box-shadow: rem(3px) rem(1px) rem(10px) #eee, rem(-1px) 0 rem(10px) #eee;
     margin-left: auto;
     margin-right: auto;

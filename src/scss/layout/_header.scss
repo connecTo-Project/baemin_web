@@ -1,3 +1,4 @@
+
 @use "../themes" as *;
 @use "../absrtacts" as *;
 body {
@@ -111,10 +112,9 @@ button {
     position: absolute;
     top: rem(1px);
     right: rem(1px);
-    border: 0;
     background-image: url("../../asset/image/header_search.png");
     background-size: contain;
-    background-position: -8px 2px;
+    transform: translate(-8px, 2px);
   }
 }
 
