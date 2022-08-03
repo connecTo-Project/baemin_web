@@ -4,17 +4,30 @@
 
 .main {
   &__section {
-    background: yellow;
+    // background: yellow;
     padding: rem(19px);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
     row-gap: rem(14px);
+    @include tablet {
+      display: grid;
+      position: relative;
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: rem(12px);
+      grid-template-areas:
+        "baemin baemin delivery delivery togo togo togo togo"
+        "baemin baemin delivery delivery mart mart mealkit mealkit"
+        "store store store store live gift special special"
+        "ad ad ad ad . . . .";
+    }
 
     & article {
       background: $white;
       border-radius: 15px;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+
       & a {
         padding: rem(17px);
         display: inline-block;
@@ -25,33 +38,126 @@
         margin-top: rem(8px);
       }
     }
-    & .baeminone,
-    & .delivery {
+    & .baeminone {
       @include size(rem(189px), rem(204px));
+      @include bg("mealkit_person.png", 70%, 50%);
+      background-position-x: rem(50px);
+      background-position-y: rem(105px);
       position: relative;
+      @include tablet {
+        grid-area: baemin;
+      }
+      &:hover {
+        background-size: 75% 55%;
+        transition: all 0.5s;
+      }
     }
-    & .baeminone::after{
+    & .baeminone::after {
+      @include bg("ddabong.png");
       content: "";
       width: rem(36px);
       height: rem(36px);
       position: absolute;
       top: 10px;
       left: 50px;
-      background: url(../../asset/image/ddabong.png) no-repeat 0 0/100%
+    }
+    & .delivery {
+      @include size(rem(189px), rem(204px));
+      @include bg("main_delivery1_background.png");
 
+      @include tablet {
+        grid-area: delivery;
+      }
+      &:hover {
+        background-size: 110% 110%;
+        transition: all 0.5s;
+      }
     }
 
-    & .togo,
+    & .togo {
+      @include size(100%, rem(84px));
+      @include bg("cat_packaging.png", 30%);
+      background-position: rem(265px);
+
+      @include tablet {
+        grid-area: togo;
+        // @include size(80%,rem(84px));
+      }
+      &:hover {
+        background-size: 35% 110%;
+        transition: all 0.5s;
+      }
+    }
     & .baeminstore {
       @include size(100%, rem(84px));
+      @include bg("heart_icon.png", 25%);
+      background-position: rem(285px);
+
+      @include tablet {
+        grid-area: store;
+      }
+      &:hover {
+        background-size: 28% 105%;
+        transition: all 0.5s;
+      }
     }
-    & .bmart,
+    & .bmart {
+      @include size(rem(189px), rem(105));
+      @include bg("smile_pack.png", 50%);
+      background-position: rem(100px);
+
+      @include tablet {
+        grid-area: mart;
+      }
+      &:hover {
+        background-size: 60% 110%;
+        transition: all 0.5s;
+      }
+    }
     & .mealkit {
       @include size(rem(189px), rem(105));
+      @include bg("menu_type_item_11.png", 40%, 50%);
+      background-position: rem(100px) rem(45px);
+
+      @include tablet {
+        grid-area: mealkit;
+      }
+      &:hover {
+        background-size: 45% 55%;
+        transition: all 0.5s;
+      }
     }
-    & .shoppinglive,
+    & .shoppinglive {
+      @include size(rem(88px), rem(84px));
+      @include bg("shopping_live.png", 50%, 50%);
+      background-position: 50% 20%;
+
+      @include tablet {
+        grid-area: live;
+      }
+      &:hover {
+        background-size: 55% 55%;
+        transition: all 0.5s;
+      }
+      & h3 {
+        font-size: rem(14px);
+        white-space: nowrap;
+        text-align: center;
+        margin-top: rem(40px);
+      }
+    }
     & .gift {
       @include size(rem(88px), rem(84px));
+      @include bg("main_present.png", 30%, 50%);
+      background-position: 50% 20%;
+
+      @include tablet {
+        grid-area: gift;
+      }
+      &:hover {
+        background-size: 35% 55%;
+        transition: all 0.5s;
+      }
       & h3 {
         font-size: rem(14px);
         white-space: nowrap;
@@ -61,9 +167,45 @@
     }
     & .special {
       @include size(rem(189px), rem(84px));
+      @include bg("menu_type_item_1.png", 35%);
+      background-position: rem(120px);
+
+      @include tablet {
+        grid-area: special;
+      }
+      &:hover {
+        background-size: 40% 110%;
+        transition: all 0.5s;
+      }
     }
     & .ad {
-      @include size(100%, rem(130px));
+      @include size(100%, rem(194px));
+      overflow: hidden;
+      position: relative;
+      @include tablet {
+        grid-area: ad;
+      }
+      &__list {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &__item {
+        // @include size(100%);
+        @include size(100%, rem(194px));
+        float: left;
+        // background: yellow;
+        &:nth-child(1) {
+          @include bg("ad1.png");
+        }
+        &:nth-child(2) {
+          @include bg("ad2.png");
+        }
+        &:nth-child(3) {
+          @include bg("ad3.png");
+        }
+      }
     }
   }
 
@@ -71,30 +213,65 @@
   & .member {
     display: flex;
     flex-flow: row nowrap;
-    background: yellow;
-    justify-content: space-between;
+    // background: yellow;
+    justify-content: center;
     padding: 0 rem(19px);
+    margin-top: rem(14px);
     text-align: center;
-    &__point {
-      border-radius: 15px 0 0 15px;
-      & a {
-        border-radius: 15px 0 0 15px;
-      }
-    }
-    &__like {
-      border-radius: 0 15px 15px 0;
-      & a {
-        border-radius: 0 15px 15px 0;
-      }
-    }
+    column-gap: 3px;
     & li {
-      @include size(rem(96px), rem(84px));
       background: $white;
       & a {
         display: inline-block;
         width: 100%;
         height: 100%;
         padding-top: 60px;
+      }
+    }
+
+    @include tablet {
+      @include size(rem(250px));
+      position: relative;
+      top: -213px;
+      right: -390px;
+      flex-wrap: wrap;
+      column-gap: 12px;
+      row-gap: 12px;
+      margin-top: 0;
+      & li {
+        border-radius: 15px;
+      }
+    }
+    &__point {
+      @include size(rem(88px), rem(84px));
+      border-radius: 15px 0 0 15px;
+      & a {
+        @include bg("point.png", 40%, 40%);
+        background-position: 50% 30%;
+        border-radius: 15px 0 0 15px;
+      }
+    }
+    &__like {
+      @include size(rem(88px), rem(84px));
+      border-radius: 0 15px 15px 0;
+      & a {
+        @include bg("heart.png", 40%, 40%);
+        background-position: 50% 30%;
+        border-radius: 0 15px 15px 0;
+      }
+    }
+    &__coupon {
+      @include size(rem(88px), rem(84px));
+      & a {
+        @include bg("ticket.png", 40%, 40%);
+        background-position: 50% 30%;
+      }
+    }
+    &__gift {
+      @include size(rem(88px), rem(84px));
+      a {
+        @include bg("gift.png", 40%, 40%);
+        background-position: 50% 30%;
       }
     }
   }
