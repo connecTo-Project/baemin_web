@@ -1,0 +1,64 @@
+@use "../themes" as *;
+@use "../absrtacts" as *;
+
+
+// 상단 배너 
+.banner{
+    width: 428px;
+    height: rem(130px);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: yellow;
+}
+
+.banner__list{
+    width: 1284px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner__item{
+    float: left;
+}
+
+.banner__img{
+    width: 428px;
+    height: 130px;
+}
+
+// 추천 메뉴 광고 
+
+
+// 메뉴 타입 선택 리스트 
+.main__menu{
+    background: tomato;
+}
+
+.menu-type{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: rem(10px);
+    padding-left: rem(16px);
+}
+
+.menu-type__item{
+    text-align: center;
+    width: rem(71px);
+    height: rem(71px);
+    background-color: $gray-100;
+    border-radius: rem(15px);
+}
+
+.menu-type__text{
+    font-family: hanna;
+    font-size: rem(12px);
+}
+
+.menu-type__image{
+    width: rem(45px);
+    height: rem(45px);
+    margin-top: rem(2px);
+}
