@@ -5,45 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>매장 상세 페이지</title>
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
-    <main class="store">
+    <!-- 스킵 내비 -->
+    <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
+    <!-- 헤더 -->
+    <header class="header">
+      <h1 class="header__logo">
+        <a class="logo__link" href="/"><img class="logo__img" src="../asset/image/logo.png" alt="배달의 민족" /></a>
+      </h1>
+      <div class="nav-wrapper">
+        <button class="header__address-button">강남 미왕빌딩 11층<img src="../asset/image/dropDown.png" alt="" /></button>
+        <a class="category" href="/"><img src="../asset/image/header_menu.png" alt="전체 메뉴" /></a>
+        <button class="header__alert-button"><img src="../asset/image/header_alarm.png" alt="알림" /></button>
+        <a class="mypage" href="/"><img src="../asset/image/header_mypage.png" alt="마이페이지" /></a>
+      </div>
+      <form class="search-form" action="">
+        <fieldset>
+          <legend class="sr-only">검색 폼</legend>
+          <label class="sr-only" for="">검색</label>
+          <input class="search-form__input" placeholder="찾아라! 맛있는 음식과 맛집" type="search" />
+          <button class="search-form__button-submit" type="submit"></button>
+        </fieldset>
+      </form>
+    </header>
+    <main class="store" id="skip">
       <h2 class="sr-only">매장 상세 페이지</h2>
       <article class="store-info">
         <h3 class="sr-only">매장 정보</h3>
         <div class="store-info__wrapper">
           <dl class="store-info__list">
             <dt class="sr-only">상호명</dt>
-            <dd class="store-info__description">비스트로피자 서울잠실점</dd>
-            <dt class="sr-only">별점</dt>
-            <dd class="store-info__description">5.0</dd>
+            <dd class="store-info__title">얼굴피자 인상점</dd>
+            <dt class="store-info__star"><span class="sr-only">별점</span></dt>
+            <dd class="store-info__ratingstar">5.0</dd>
             <dt class="store-info__data">최근리뷰</dt>
-            <dd class="store-info__description">457</dd>
+            <dd class="store-info__description">9,999</dd>
             <dt class="store-info__data">최근사장님댓글</dt>
-            <dd class="store-info__description">115</dd>
+            <dd class="store-info__description">999</dd>
           </dl>
           <ul class="store-more__list">
-            <li class="store-more__item"><button class="store-more__button" type="button">전화</button></li>
-            <li class="store-more__item"><button class="store-more__button" type="button">찜 982</button></li>
-            <li class="store-more__item"><button class="store-more__button" type="button">공유</button></li>
+            <li class="store-more__item"><button class="store-more__button call" type="button">전화</button></li>
+            <li class="store-more__item"><button class="store-more__button zim" type="button">찜 982</button></li>
+            <li class="store-more__item"><button class="store-more__button share" type="button">공유</button></li>
           </ul>
         </div>
-        <button class="store__coupon">쿠폰 받기</button>
+        <button class="store__coupon">최대 10,000원 쿠폰 받기</button>
         <div class="store-order">
           <div role="tablist" class="store-order__tablist">
-            <button class="store-order__tab" role="tab" id="tabDelivery" aria-selected="true" aria-controls="panelDelivery">배달주문</button>
+            <button class="store-order__tab selected" role="tab" id="tabDelivery" aria-selected="true" aria-controls="panelDelivery">배달주문</button>
             <button class="store-order__tab" role="tab" id="tabPack" aria-selected="false" aria-controls="panelPack">포장/방문주문</button>
           </div>
           <div class="store-delivery" id="panelDelivery" aria-labelledby="tabDelivery">
             <dl class="store-delivery__list">
               <dt class="store-delivery__data">최소주문금액</dt>
-              <dd class="store-delivery__description">15,900원</dd>
+              <dd class="store-delivery__description">100,900원</dd>
               <dt class="store-delivery__data">결제방법</dt>
-              <dd class="store-delivery__description">~~</dd>
+              <dd class="store-delivery__description">바로결제, 만나서 카드결제,예약가능</dd>
               <dt class="store-delivery__data">배달시간</dt>
-              <dd class="store-delivery__description">~~~</dd>
+              <dd class="store-delivery__description">120~240분 예상</dd>
               <dt class="store-delivery__data">배달팁</dt>
-              <dd class="store-delivery__description">~~~</dd>
+              <dd class="store-delivery__description">10,000원</dd>
             </dl>
           </div>
           <div class="store-pack" id="panelPack" aria-labelledby="tabPack">
@@ -60,44 +83,171 @@
       </article>
       <div class="store-detail">
         <ul class="store-detail__list">
-          <li class="store-detail__item"><a class="store-detail__link" href="/">메뉴</a></li>
-          <li class="store-detail__item"><a class="store-detail__link" href="/">정보</a></li>
-          <li class="store-detail__item"><a class="store-detail__link" href="/">리뷰</a></li>
+          <li class="store-detail__item selected"><a class="store-detail__link" href="#">메뉴</a></li>
+          <li class="store-detail__item"><a class="store-detail__link" href="#">정보</a></li>
+          <li class="store-detail__item"><a class="store-detail__link" href="#">리뷰</a></li>
         </ul>
         <ul class="store-nav__list">
           <li class="store-nav__item"><a class="store-nav__move" href="#signature">대표 메뉴</a></li>
-          <li class="store-nav__item"><a class="store-nav__move" href="#category1">반반피자</a></li>
-          <li class="store-nav__item"><a class="store-nav__move" href="#category2">1+1 세트</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category1">반반 피자</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category2">프리미엄 피자</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#category3">1+1 세트</a></li>
+          <li class="store-nav__item"><a class="store-nav__move" href="#side">사이드</a></li>
         </ul>
         <section class="store-signature">
-          <h3 class="store-signature__title">대표 메뉴</h3>
+          <h3 class="store-signature__title"><span class="sr-only">대표 메뉴</span></h3>
           <ul id="signature" class="store-signature__list">
             <li class="store-signature__item">
               <a href="/" class="store-signature__link">
                 <dl class="store-menu">
-                  <dt class="store-menu__title">(<span lang="en">Best</span>) 페퍼로니피자</dt>
-                  <dd class="store-menu__description">설명</dd>
-                  <dd class="store-menu__description">가격</dd>
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
                 </dl>
-                <figure class="store-menu__cover">
-                  <img class="store-menu__img" src="/" alt="" />
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-signature__item">
+              <a href="/" class="store-signature__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-signature__item">
+              <a href="/" class="store-signature__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-signature__item">
+              <a href="/" class="store-signature__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-signature__item">
+              <a href="/" class="store-signature__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
                 </figure>
               </a>
             </li>
           </ul>
         </section>
         <details class="store-category">
-          <summary class="store-category__title">반반피자</summary>
-          <ul class="store-category__list" id="#category1">
+          <summary class="store-category__title">반반 피자</summary>
+          <ul class="store-category__list" id="category1">
             <li class="store-category__item">
               <a href="/" class="store-category__link">
                 <dl class="store-menu">
-                  <dt class="store-menu__title">(<span lang="en">Best</span>) 페퍼로니피자</dt>
-                  <dd class="store-menu__description">설명</dd>
-                  <dd class="store-menu__description">가격</dd>
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
                 </dl>
-                <figure class="store-menu__cover">
-                  <img class="store-menu__img" src="/" alt="" />
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </details>
+        <details class="store-category">
+          <summary class="store-category__title">프리미엄 피자</summary>
+          <ul class="store-category__list" id="category2">
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
                 </figure>
               </a>
             </li>
@@ -105,16 +255,105 @@
         </details>
         <details class="store-category">
           <summary class="store-category__title">1+1 세트메뉴</summary>
-          <ul class="store-category__list" id="#category2">
+          <ul class="store-category__list" id="category3">
             <li class="store-category__item">
               <a href="/" class="store-category__link">
                 <dl class="store-menu">
-                  <dt class="store-menu__title">(<span lang="en">Best</span>) 페퍼로니피자</dt>
-                  <dd class="store-menu__description">설명</dd>
-                  <dd class="store-menu__description">가격</dd>
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
                 </dl>
-                <figure class="store-menu__cover">
-                  <img class="store-menu__img" src="/" alt="" />
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </details>
+        <details class="store-category">
+          <summary class="store-category__title">사이드</summary>
+          <ul class="store-category__list" id="side">
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="store-category__item">
+              <a href="/" class="store-category__link">
+                <dl class="store-menu">
+                  <dt class="store-menu__title">어깨피자</dt>
+                  <dd class="store-menu__description">돌돌 말린 어깨를 쭉 피자</dd>
+                  <dd class="store-menu__description">10,900원</dd>
+                </dl>
+                <figure class="store-menu__cover" aria-hidden="true">
+                  <img class="store-menu__img" src="../asset/image/menu_type_item_4.png" alt="" />
                 </figure>
               </a>
             </li>
@@ -122,5 +361,25 @@
         </details>
       </div>
     </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">사업자정보확인</a></li>
+        <li><a class="footer__link" href="#">이용약관</a></li>
+        <li><a class="footer__link" href="#">전자금융거래이용약관</a></li>
+        <li><a class="footer__link" href="#">개인정보처리방침</a></li>
+      </ul>
+      <address class="adress">
+        <span>(주)우아한형제들</span>
+        <span>대표이사 김범준</span>
+        <span>사업자등록번호 120-87-65763</span>
+        <span>통신판매업 서울 송파-0515</span>
+        <span>호스팅서비스제공자 (주)우아한형제들</span>
+        <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
+        <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
+        <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
+        <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
+      </address>
+      <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+    </footer>
   </body>
 </html>
