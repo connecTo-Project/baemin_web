@@ -10,7 +10,7 @@
     display: flex;
     flex-flow: row nowrap;
     font-size: rem(12px);
-    justify-content: space-around;
+    justify-content: flex-start;
     // padding: rem(20px);
 
     a::after {

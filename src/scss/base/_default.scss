@@ -1,5 +1,9 @@
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, Roboto, sans-serif;
   font: inherit;
