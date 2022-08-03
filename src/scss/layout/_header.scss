@@ -5,6 +5,9 @@ body {
   width: rem(428px);
   margin-left: auto;
   margin-right: auto;
+  @include tablet{
+    @include size(rem(826px));
+  }
 }
 h3 {
   font-size: rem(25px);
@@ -70,14 +73,20 @@ button {
   &__alert-button,
   & .mypage {
     @include size(rem(32px), rem(32px));
-    background: red;
+    // background: red;
     border: 0;
-
     margin-top: rem(20px);
   }
+  & .category {
+    @include bg("header_menu.png");
+  }
   &__alert-button {
+    @include bg("header_alarm.png");
     margin-left: rem(20px);
     margin-right: rem(20px);
+  }
+  & .mypage {
+    @include bg("header_mypage.png");
   }
 
   & .search-form {
@@ -94,10 +103,10 @@ button {
   }
   & .search-form__button-submit {
     @include size(rem(45px), rem(45px));
+    @include bg("header_search.png");
     position: absolute;
     top: rem(1px);
     right: rem(1px);
     border: 0;
   }
 }
-
