@@ -50,7 +50,6 @@ button {
   background: $mainColor;
   padding: rem(19px);
   border-radius: 0 0 20px 20px;
-  display: flow-root;
   & .nav-wrapper {
     display: flex;
     flex-flow: row nowrap;
