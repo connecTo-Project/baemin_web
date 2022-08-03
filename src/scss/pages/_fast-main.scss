@@ -3,7 +3,7 @@
 @use "../absrtacts" as *;
 
 .main {
-  & .togo {
+  & .fast-togo {
     @include size(100%, rem(204px));
     @include bg("cat_packaging.png", 50%);
     background-position: rem(185px);
