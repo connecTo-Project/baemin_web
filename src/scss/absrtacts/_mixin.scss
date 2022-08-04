@@ -33,6 +33,11 @@
   padding-bottom: rem($paddingY);
 }
 
+@mixin paddingTL($paddingT: 0, $paddingL: 0) {
+  padding-top: rem($paddingT);
+  padding-left: rem($paddingL);
+}
+
 // position 관련 믹스인
 
 @mixin pos($pos: absolute, $t: initial, $l: initial) {
@@ -41,16 +46,16 @@
   left: $l;
 }
 
-@mixin posLeft($t, $l, $pos: absolute) {
-  position: $pos;
-  top: rem($t);
-  left: rem($l);
-}
-@mixin posRight($t, $r, $pos: absolute) {
-  position: $pos;
-  top: rem($t);
-  right: rem($r);
-}
+// @mixin posLeft($t, $l, $pos: absolute) {
+//   position: $pos;
+//   top: rem($t);
+//   left: rem($l);
+// }
+// @mixin posRight($t, $r, $pos: absolute) {
+//   position: $pos;
+//   top: rem($t);
+//   right: rem($r);
+// }
 
 @mixin posCenterX($pos: absolute) {
   position: $pos;
@@ -128,12 +133,12 @@
   line-height: 1.5;
 }
 
-@mixin textHeading($size) {
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  font-size: rem($size);
-}
+// @mixin textHeading($size) {
+//   font-weight: 700;
+//   letter-spacing: 0.02em;
+//   line-height: 1.4;
+//   font-size: rem($size);
+// }
 
 // 그리드 믹스인
 @mixin gridbox($column-count: 12, $gap: 20px) {
@@ -141,4 +146,22 @@
   grid-template-columns: repeat($column-count, 1fr);
   grid-template-rows: auto;
   gap: rem($gap);
+}
+
+// 스크롤 믹스인
+@mixin scroll() {
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+}
+
+// flex 믹스인
+@mixin flex($dir: row, $wrap: nowrap, $align-items: center) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  align-items: $align-items;
 }
