@@ -1005,7 +1005,6 @@ main {
   background-image: url(../../asset/image/menu_type_background.jpg);
   background-size: cover;
   background-repeat: repeat;
-  background-position: 50px;
 }
 
 .menu-type {
@@ -1026,7 +1025,6 @@ main {
   width: 4.4375rem;
   height: 4.4375rem;
   border-radius: 0.9375rem;
-  background-color: #f6f6f6;
 }
 
 .menu-type__text {
@@ -1046,7 +1044,7 @@ main {
   border-radius: 0.9375rem;
   background: #FFFFFF;
   margin: 13px auto;
-  background: url(../../asset/image/recommend_img3.jpeg) no-repeat;
+  background: url(../../asset/image/recommend_img3.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -1489,6 +1487,43 @@ main {
   color: #888888;
 }
 
+<<<<<<< HEAD
+.fast-main {
+  background-image: url(../../asset/image/menu_type_background.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: -5px;
+}
+
+.fast-menu-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 427px;
+  justify-content: space-around;
+}
+
+.menu-type__item {
+  text-align: center;
+}
+
+.fast-menu-type__link {
+  display: block;
+  width: 8.75rem;
+  height: 8.75rem;
+  border-radius: 0.9375rem;
+}
+
+.fast-menu-type__text {
+  font-family: hanna;
+  font-size: 1.25rem;
+}
+
+.fast-menu-type__image {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0.125rem;
+=======
 .store__item {
   border-bottom: 1px solid #D7D7D7;
 }
