@@ -8,9 +8,8 @@
     height: 0;
   }
 
-  .image-carousel {
+  .height-up {
     height: 250px;
-    background: #eee;
   }
 
   &-info {
@@ -87,7 +86,7 @@
     position: absolute;
     font-size: rem(12px);
     top: 14%;
-    right: 5%;
+    right: 2%;
     color: $gray-100;
     padding: 0 0 rem(4px) rem(4px);
 
@@ -103,9 +102,33 @@
   }
 
   &-category__title {
-    padding: rem(14px);
+    padding: rem(16px);
     background: $white;
     font-size: rem(18px);
     font-weight: 600;
   }
+}
+
+.store-menu {
+  &.fast {
+    gap: rem(15px);
+  }
+
+  &__cover.fast {
+    @include size(90px, 90px);
+    background: rgba(rgb(240, 229, 168), 0.3);
+    border-radius: rem(8px);
+    overflow: hidden;
+  }
+}
+
+.store-category__item.fast {
+  background: $white;
+  border-top: 1px solid #d7d7d7;
+  padding: rem(18px);
+}
+
+.store-category__link.fast {
+  display: flex;
+  justify-content: space-between;
 }

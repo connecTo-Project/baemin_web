@@ -59,13 +59,14 @@ button {
   }
   &__logo {
     @include size(rem(120px), rem(38px));
+    color: $black-100;
     // background-image:
   }
   &__address-button {
     // @include size(50% rem(32px));
     background: transparent;
     color: $white;
-    font-size: rem(22px);
+    font-size: rem(18px);
     font-weight: 500;
     margin-top: rem(22px);
     text-align: left;
