@@ -9,7 +9,7 @@
   background-size: $w $h;
 }
 
-@mixin bgRecommend($file){
+@mixin bgRecommend($file) {
   background-image: url(../asset/image/#{$file});
   background-repeat: no-repeat;
 }

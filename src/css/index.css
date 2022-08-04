@@ -567,7 +567,7 @@ main {
   display: inline-block;
   width: 15rem;
   height: 15rem;
-  background-image: url(../../asset/image/mealkit_person.png);
+  background-image: url(../asset/image/mealkit_person.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-size: contain;
@@ -584,7 +584,7 @@ main {
   display: inline-block;
   width: 11.25rem;
   height: 8.75rem;
-  background-image: url(../../asset/image/cat_packaging.png);
+  background-image: url(../asset/image/cat_packaging.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-size: contain;
@@ -672,7 +672,7 @@ main {
 .main__section .baeminone {
   width: 11.8125rem;
   height: 12.75rem;
-  background-image: url(../../asset/image/mealkit_person.png);
+  background-image: url(../asset/image/mealkit_person.png);
   background-repeat: no-repeat;
   background-size: 70% 50%;
   background-position-x: 3.125rem;
@@ -689,7 +689,7 @@ main {
   transition: all 0.5s;
 }
 .main__section .baeminone::after {
-  background-image: url(../../asset/image/ddabong.png);
+  background-image: url(../asset/image/ddabong.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   content: "";
@@ -702,7 +702,7 @@ main {
 .main__section .delivery {
   width: 11.8125rem;
   height: 12.75rem;
-  background-image: url(../../asset/image/main_delivery1_background.png);
+  background-image: url(../asset/image/main_delivery1_background.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -718,7 +718,7 @@ main {
 .main__section .togo {
   width: 100%;
   height: 5.25rem;
-  background-image: url(../../asset/image/cat_packaging.png);
+  background-image: url(../asset/image/cat_packaging.png);
   background-repeat: no-repeat;
   background-size: 30% 100%;
   background-position: 16.5625rem;
@@ -735,7 +735,7 @@ main {
 .main__section .baeminstore {
   width: 100%;
   height: 5.25rem;
-  background-image: url(../../asset/image/heart_icon.png);
+  background-image: url(../asset/image/heart_icon.png);
   background-repeat: no-repeat;
   background-size: 25% 100%;
   background-position: 17.8125rem;
@@ -752,7 +752,7 @@ main {
 .main__section .bmart {
   width: 11.8125rem;
   height: 6.5625rem;
-  background-image: url(../../asset/image/smile_pack.png);
+  background-image: url(../asset/image/smile_pack.png);
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: 6.25rem;
@@ -769,7 +769,7 @@ main {
 .main__section .mealkit {
   width: 11.8125rem;
   height: 6.5625rem;
-  background-image: url(../../asset/image/menu_type_item_11.png);
+  background-image: url(../asset/image/menu_type_item_11.png);
   background-repeat: no-repeat;
   background-size: 40% 50%;
   background-position: 6.25rem 2.8125rem;
@@ -786,7 +786,7 @@ main {
 .main__section .shoppinglive {
   width: 5.5rem;
   height: 5.25rem;
-  background-image: url(../../asset/image/shopping_live.png);
+  background-image: url(../asset/image/shopping_live.png);
   background-repeat: no-repeat;
   background-size: 50% 50%;
   background-position: 50% 20%;
@@ -812,7 +812,7 @@ main {
 .main__section .gift {
   width: 5.5rem;
   height: 5.25rem;
-  background-image: url(../../asset/image/main_present.png);
+  background-image: url(../asset/image/main_present.png);
   background-repeat: no-repeat;
   background-size: 30% 50%;
   background-position: 50% 20%;
@@ -838,7 +838,7 @@ main {
 .main__section .special {
   width: 11.8125rem;
   height: 5.25rem;
-  background-image: url(../../asset/image/menu_type_item_1.png);
+  background-image: url(../asset/image/menu_type_item_1.png);
   background-repeat: no-repeat;
   background-size: 35% 100%;
   background-position: 7.5rem;
@@ -911,7 +911,7 @@ main {
   border-radius: 15px 0 0 15px;
 }
 .main .member__point a {
-  background-image: url(../../asset/image/point.png);
+  background-image: url(../asset/image/point.png);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -923,7 +923,7 @@ main {
   border-radius: 0 15px 15px 0;
 }
 .main .member__like a {
-  background-image: url(../../asset/image/heart.png);
+  background-image: url(../asset/image/heart.png);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -934,7 +934,7 @@ main {
   height: 5.4375rem;
 }
 .main .member__coupon a {
-  background-image: url(../../asset/image/ticket.png);
+  background-image: url(../asset/image/ticket.png);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -944,7 +944,7 @@ main {
   height: 5.4375rem;
 }
 .main .member__gift a {
-  background-image: url(../../asset/image/gift.png);
+  background-image: url(../asset/image/gift.png);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -1016,37 +1016,37 @@ main {
 }
 
 .recommend__item:nth-child(1) {
-  background-image: url(../../asset/image/recommend_img1.jpeg);
+  background-image: url(../asset/image/recommend_img1.jpeg);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(2) {
-  background-image: url(../../asset/image/recommend_img8.jpeg);
+  background-image: url(../asset/image/recommend_img8.jpeg);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(3) {
-  background-image: url(../../asset/image/recommend_img3.jpeg);
+  background-image: url(../asset/image/recommend_img3.jpeg);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(4) {
-  background-image: url(../../asset/image/recommend_img4.jpeg);
+  background-image: url(../asset/image/recommend_img4.jpeg);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(5) {
-  background-image: url(../../asset/image/recommend_img5.jpeg);
+  background-image: url(../asset/image/recommend_img5.jpeg);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(6) {
-  background-image: url(../../asset/image/recommend_img6.jpeg);
+  background-image: url(../asset/image/recommend_img6.jpeg);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(7) {
-  background-image: url(../../asset/image/recommend_img7.jpeg);
+  background-image: url(../asset/image/recommend_img7.jpeg);
   background-repeat: no-repeat;
 }
 
@@ -1749,7 +1749,7 @@ main {
 .main .fast-togo {
   width: 100%;
   height: 12.75rem;
-  background-image: url(../../asset/image/cat_packaging.png);
+  background-image: url(../asset/image/cat_packaging.png);
   background-repeat: no-repeat;
   background-size: 50% 60%;
   background-position: 9.6875rem 5rem;
