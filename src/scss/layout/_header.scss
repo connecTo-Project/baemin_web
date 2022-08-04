@@ -6,6 +6,9 @@ body {
   width: rem(428px);
   margin-left: auto;
   margin-right: auto;
+  @include tablet{
+    @include size(rem(826px));
+  }
 }
 h3 {
   font-size: rem(25px);
