@@ -45,7 +45,7 @@
   border-radius: rem(15px);
   background: url(../../asset/image/recommend_img6.jpeg) no-repeat;
   background-size: cover;
-  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.5) inset;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5) inset;
   color: $white;
   font-size: 17px;
   font-weight: 700;
@@ -56,13 +56,11 @@
 }
 
 
-
 // 메뉴 타입 선택 리스트 
 .food-category {
   background-image: url(../../asset/image/menu_type_background.jpg);
   background-size: cover;
   background-repeat: repeat;
-  background-position: 50px;
 }
 
 .menu-type {
@@ -83,7 +81,6 @@
   width: rem(71px);
   height: rem(71px);
   border-radius: rem(15px);
-  background-color: $gray-50;
 }
 
 .menu-type__text {
@@ -104,7 +101,7 @@
   border-radius: rem(15px);
   background: $white;
   margin: 13px auto;
-  background: url(../../asset/image/recommend_img3.jpeg) no-repeat;
+  background: url(../../asset/image/recommend_img3.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -131,7 +128,6 @@
   display: inline-block;
 }
 
-
 .recommend-store__name {
   font-size: rem(18px);
   font-weight: 700;
@@ -147,7 +143,7 @@
   padding-left: 18px;
 }
 
-.recommend-store__star::before{
+.recommend-store__star::before {
   content: "";
   display: inline-block;
   background-image: url(../../asset/image/small_star.png);
@@ -169,7 +165,7 @@
   right: 15px;
 }
 
-.recommend-store__time::before{
+.recommend-store__time::before {
   content: "";
   display: inline-block;
   background-image: url(../../asset/image/phone_call.png);
@@ -179,4 +175,9 @@
   position: absolute;
   top: 2px;
   left: 3px;
+}
+
+// 미디어쿼리(max width : 826px
+@media (max-width:826px) {
+
 }

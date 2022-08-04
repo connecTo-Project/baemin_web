@@ -534,10 +534,9 @@ button {
   position: absolute;
   top: 0.0625rem;
   right: 0.0625rem;
-  border: 0;
   background-image: url("../../asset/image/header_search.png");
   background-size: contain;
-  background-position: -8px 2px;
+  transform: translate(-8px, 2px);
 }
 
 main {
@@ -691,7 +690,6 @@ main {
   background-image: url(../../asset/image/menu_type_background.jpg);
   background-size: cover;
   background-repeat: repeat;
-  background-position: 50px;
 }
 
 .menu-type {
@@ -712,7 +710,6 @@ main {
   width: 4.4375rem;
   height: 4.4375rem;
   border-radius: 0.9375rem;
-  background-color: #f6f6f6;
 }
 
 .menu-type__text {
@@ -732,7 +729,7 @@ main {
   border-radius: 0.9375rem;
   background: #FFFFFF;
   margin: 13px auto;
-  background: url(../../asset/image/recommend_img3.jpeg) no-repeat;
+  background: url(../../asset/image/recommend_img3.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -812,8 +809,10 @@ main {
   width: 26.75rem;
   margin-left: auto;
   margin-right: auto;
-  background: #eee;
-  padding-top: 16.25rem;
+  background-image: url("../../asset/image/pizza-store.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 15.625rem;
 }
 .store-info {
   position: relative;
@@ -824,7 +823,7 @@ main {
   width: 24.375rem;
   height: 14.375rem;
   border-radius: 5px;
-  transform: translateY(-40px);
+  transform: translateY(-30px);
   box-shadow: 0.1875rem 0.0625rem 0.625rem #eee, -0.0625rem 0 0.625rem #eee;
   margin-left: auto;
   margin-right: auto;
@@ -1155,6 +1154,137 @@ main {
   height: 150%;
   width: 100%;
   color: #888888;
+}
+
+.fast-main {
+  background-image: url(../../asset/image/menu_type_background.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: -5px;
+}
+
+.fast-menu-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 427px;
+  justify-content: space-around;
+}
+
+.menu-type__item {
+  text-align: center;
+}
+
+.fast-menu-type__link {
+  display: block;
+  width: 8.75rem;
+  height: 8.75rem;
+  border-radius: 0.9375rem;
+}
+
+.fast-menu-type__text {
+  font-family: hanna;
+  font-size: 1.25rem;
+}
+
+.fast-menu-type__image {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0.125rem;
+}
+
+.fast-store p::after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+.fast-store .image-carousel {
+  height: 250px;
+  background: #eee;
+}
+.fast-store-info {
+  position: relative;
+  background: #FFFFFF;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 1.75rem 1rem;
+}
+.fast-store-info__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.fast-store-info__title {
+  width: 100%;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.fast-store-info__star {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../asset/image/yellow_star.png");
+  background-size: contain;
+  transform: translateY(1px);
+}
+.fast-store-info__ratingStar {
+  font-weight: 700;
+  width: 80%;
+  transform: translateX(-7px);
+}
+.fast-store-info__ratingStar span {
+  font-weight: 400;
+}
+.fast-store-info__ratingStar ::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  background-image: url("../../asset/image/dropDown.png");
+  background-size: contain;
+  transform: rotate(-90deg) translate(-2px, -2px);
+}
+.fast-store-info__data {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  display: inline-block;
+  width: 20%;
+}
+.fast-store-info__description {
+  font-size: 0.75rem;
+  width: 75%;
+}
+.fast-store-info__description.detail::after {
+  content: "자세히";
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  background: #f6f6f6;
+  padding: 0 0.3125rem;
+  border-radius: 0.625rem;
+  transform: translate(3px);
+}
+.fast-store-info__link {
+  position: absolute;
+  font-size: 0.75rem;
+  top: 14%;
+  right: 5%;
+  color: #888888;
+  padding: 0 0 0.25rem 0.25rem;
+}
+.fast-store-info__link::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../asset/image/dropDown.png");
+  background-size: contain;
+  transform: rotate(-90deg) translate(-4px, -1px);
+}
+.fast-store-category__title {
+  padding: 0.875rem;
+  background: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

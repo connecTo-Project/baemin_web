@@ -1,0 +1,40 @@
+@use "../themes" as *;
+@use "../absrtacts" as *;
+
+// 메뉴 타입 선택 리스트 
+.fast-main{
+    background-image: url(../../asset/image/menu_type_background.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: -5px;
+  }
+  
+  .fast-menu-type {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 427px;
+    justify-content: space-around;
+  }
+  
+  .menu-type__item {
+    text-align: center;
+  }
+
+  .fast-menu-type__link {
+    display: block;
+    width: rem(140px);
+    height: rem(140px);
+    border-radius: rem(15px);
+  }
+  
+  .fast-menu-type__text {
+    font-family: hanna;
+    font-size: rem(20px);
+  }
+  
+  .fast-menu-type__image {
+    width: rem(80px);
+    height: rem(80px);
+    margin-top: rem(2px);
+  }
