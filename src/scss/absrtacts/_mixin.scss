@@ -4,13 +4,13 @@
   height: $h;
 }
 @mixin bg($file, $w: 100%, $h: 100%) {
-  background-image: url(../asset/image/#{$file});
+  background-image: url("../asset/image/" + $file);
   background-repeat: no-repeat;
   background-size: $w $h;
 }
 
-@mixin bgRecommend($file){
-  background-image: url(../asset/image/#{$file});
+@mixin bgRecommend($file) {
+  background-image: url("../asset/image/" + $file);
   background-repeat: no-repeat;
 }
 // 여백 관련 믹스인
