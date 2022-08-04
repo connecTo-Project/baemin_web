@@ -3,13 +3,14 @@
 @use "../base" as *;
 
 .main__store-list {
+  padding-top: 10px;
   background-color: $white;
 }
 
 .navigation {
   height: rem(60px);
   border-bottom: 1px solid $gray-70;
-  
+
   &__list {
     display: flex;
     flex-wrap: nowrap;
@@ -17,12 +18,20 @@
     align-items: center;
     gap: rem(36px);
     height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
     &:first-child {
       padding-left: rem(27px);
     }
+
     &:last-child {
       padding-right: rem(27px);
     }
+  }
+  
+  &__list::-webkit-scrollbar {
+      display: none; 
   }
 
   &__link {
@@ -34,13 +43,14 @@
     width: 100%;
     color: $gray-100;
   }
-    
+
   .underbar--active {
     font-weight: 800;
     color: $black-100;
   }
-  
+
 }
+
 .sub-navigation {
   height: rem(57px);
 
@@ -51,13 +61,22 @@
     align-items: center;
     gap: rem(36px);
     height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
     &:first-child {
       padding-left: rem(27px);
     }
+
     &:last-child {
       padding-right: rem(27px);
     }
   }
+
+  &__list::-webkit-scrollbar {
+    display: none; 
+}
 
   &__link {
     white-space: nowrap;
@@ -68,6 +87,60 @@
     width: 100%;
     color: $gray-100;
   }
-
-  
 }
+
+.store {
+  &__item {
+    border-bottom: 1px solid $gray-70;
+  }
+
+  &__list {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__link {
+    height: rem(132px);
+    // width: 500px
+  }
+
+
+  &__img {
+    float: left;
+    width: rem(86px);
+    height: rem(86px);
+    margin: rem(22px) rem(19px) auto rem(19px);
+    border-radius: rem(25px);
+  }
+
+  &-description {
+    display: inline-block;
+    margin-top: rem(22px);
+    margin-bottom: rem(22px);
+    font-size: rem(12px);;
+
+
+    &__name {
+      font-size: rem(18px);
+      font-weight: 600;
+    }
+    &__star {
+      font-weight: 600;
+    }
+    &__star::before {
+      content: "";
+      background: url("../asset/image/small_star.png") no-repeat;
+      position: relative;
+      display: inline-block;
+      background-size: 12px 12px;
+      width: rem(12px);
+      height: rem(12px);
+      margin-right: rem(4px);
+    }
+  }
+}
+
+.store__item:last-child {
+  border-bottom: none;
+}
+
