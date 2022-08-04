@@ -9,18 +9,20 @@
   <body>
     <!-- 해더 -->
     <header class="header">
-      <h1 class="logo">
-        <a class="logo__link" href="/"><img class="logo__img" src="/" alt="배달의 민족" /></a>
+      <h1 class="header__logo">
+        <a class="logo__link" href="/"><img class="logo__img" src="../asset/image/logo.png" alt="배달의 민족" /></a>
       </h1>
-      <button class="header__button--adress">주소</button>
-      <a class="category" href="/" >메뉴</a>
-      <button class="header__alert ">알림</button>
-      <a class="mypage" href="/" >마이페이지</a>
+      <div class="nav-wrapper">
+        <button class="header__address-button">강남 미왕빌딩 11층<img src="../asset/image/dropDown.png" alt="" /></button>
+        <a class="category" href="/"><img src="../asset/image/header_menu.png" alt="전체 메뉴" /></a>
+        <button class="header__alert-button"><img src="../asset/image/header_alarm.png" alt="알림" /></button>
+        <a class="mypage" href="/"><img src="../asset/image/header_mypage.png" alt="마이페이지" /></a>
+      </div>
       <form class="search-form" action="">
         <fieldset>
           <legend class="sr-only">검색 폼</legend>
-          <label class="sr-only search-form__label" for="">검색</label>
-          <input class="search-form__input" type="search" />
+          <label class="sr-only" for="">검색</label>
+          <input class="search-form__input" placeholder="찾아라! 맛있는 음식과 맛집" type="search" />
           <button class="search-form__button-submit" type="submit"></button>
         </fieldset>
       </form>

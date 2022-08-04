@@ -1,3 +1,4 @@
+
 @use "../themes" as *;
 @use "../absrtacts" as *;
 body {
@@ -5,9 +6,6 @@ body {
   width: rem(428px);
   margin-left: auto;
   margin-right: auto;
-  @include tablet {
-    @include size(rem(826px));
-  }
 }
 h3 {
   font-size: rem(25px);
@@ -53,42 +51,49 @@ button {
   position: relative;
   background: $mainColor;
   padding: rem(19px);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
+  display: flow-root;
   & .nav-wrapper {
     display: flex;
     flex-flow: row nowrap;
   }
   &__logo {
     @include size(rem(120px), rem(38px));
+    color: $black-100;
     // background-image:
   }
   &__address-button {
     // @include size(50% rem(32px));
     background: transparent;
     color: $white;
-    font-size: rem(22px);
+    font-size: rem(18px);
     font-weight: 500;
     margin-top: rem(22px);
     text-align: left;
     margin-right: auto;
+
+    img {
+      width: rem(30px);
+      height: rem(20px);
+      transform: translate(5px, 3px);
+      filter: brightness(0) invert(1);
+    }
   }
-  & .category,
+  .category,
   &__alert-button,
-  & .mypage {
+  .mypage {
     @include size(rem(32px), rem(32px));
     border: 0;
     margin-top: rem(20px);
+
+    img {
+      filter: brightness(0) invert(1);
+    }
   }
-  & .category {
-    @include bg("header_menu.png");
-  }
+
   &__alert-button {
-    @include bg("header_alarm.png");
     margin-left: rem(20px);
     margin-right: rem(20px);
-  }
-  & .mypage {
-    @include bg("header_mypage.png");
   }
 
   & .search-form {
@@ -104,9 +109,7 @@ button {
     border: 0;
   }
   & .search-form__button-submit {
-    @include size(rem(45px), rem(45px));
-    @include bg("header_search.png");
-
+    @include size(rem(40px), rem(40px));
     position: absolute;
     top: rem(1px);
     right: rem(1px);
@@ -115,6 +118,7 @@ button {
     transform: translate(-8px, 2px);
   }
 }
+
 main {
   margin-top: -10px !important;
 }

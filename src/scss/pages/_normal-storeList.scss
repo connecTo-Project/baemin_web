@@ -2,8 +2,11 @@
 @use "../absrtacts" as *;
 @use "../base" as *;
 
-.main__store-list {
+
+main {
   padding-top: 10px;
+}
+.main__store-list {
   background-color: $white;
 }
 
@@ -12,14 +15,10 @@
   border-bottom: 1px solid $gray-70;
 
   &__list {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    align-items: center;
+    @include flex();
+    @include scroll();
     gap: rem(36px);
     height: 100%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 
     &:first-child {
       padding-left: rem(27px);
@@ -28,10 +27,6 @@
     &:last-child {
       padding-right: rem(27px);
     }
-  }
-  
-  &__list::-webkit-scrollbar {
-      display: none; 
   }
 
   &__link {
@@ -55,15 +50,10 @@
   height: rem(57px);
 
   &__list {
-    display: flex;
-    flex-grow: row nowrap;
-    overflow: scroll;
-    align-items: center;
+    @include flex();
+    @include scroll();
     gap: rem(36px);
     height: 100%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
 
     &:first-child {
       padding-left: rem(27px);
@@ -73,10 +63,6 @@
       padding-right: rem(27px);
     }
   }
-
-  &__list::-webkit-scrollbar {
-    display: none; 
-}
 
   &__link {
     white-space: nowrap;
@@ -101,7 +87,6 @@
 
   &__link {
     height: rem(132px);
-    // width: 500px
   }
 
 
