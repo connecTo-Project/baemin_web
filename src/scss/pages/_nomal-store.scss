@@ -2,9 +2,7 @@
 @use "../themes" as *;
 
 .store {
-  max-width: rem(760px);
-  margin-left: auto;
-  margin-right: auto;
+  @include autoMargin;
   background-image: url("../../asset/image/pizza-store.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -18,13 +16,17 @@
 
   &-info__wrapper {
     background: #fefefe;
-    width: rem(390px);
+    width: 90%;
     height: rem(230px);
     border-radius: 5px;
     transform: translateY(-30px);
     box-shadow: rem(3px) rem(3px) rem(2px) #eee, rem(-1px) 0 rem(2px) #eee;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+      padding: 0 rem(180px);
+    }
   }
 
   &-info__list {
@@ -114,7 +116,7 @@
     color: #ef8a32;
     font-size: rem(18px);
     font-weight: 600;
-    width: rem(390px);
+    width: 90%;
     height: rem(50px);
     border: rem(1px) solid #d7d7d7;
     border-radius: rem(5px);
@@ -123,6 +125,10 @@
     margin-right: auto;
     cursor: pointer;
     background: url("../../asset/image/double_coupon.png") no-repeat rem(60px) 0 / contain, url("../../asset/image/download_icon.png") no-repeat rem(286px) 13px / 20px 20px, #f6f6f6;
+
+    @include tablet {
+      background: url("../../asset/image/double_coupon.png") no-repeat rem(230px) 0 / contain, url("../../asset/image/download_icon.png") no-repeat rem(470px) 13px / 20px 20px, #f6f6f6;
+    }
   }
 
   &-order__tablist {
@@ -229,6 +235,21 @@
     padding: rem(5px);
   }
 
+  @include tablet {
+    &-nav__list {
+      display: flex;
+      justify-content: space-around;
+      margin: rem(30px) 0;
+      font-size: rem(18px);
+    }
+
+    &-nav__item {
+      border: 1px solid #d7d7d7;
+      border-radius: rem(30px);
+      padding: rem(2px) rem(5px);
+    }
+  }
+
   &-signature {
     @include size(95%, auto);
     @include autoMargin;
@@ -285,7 +306,28 @@
       border-radius: rem(8px);
       overflow: hidden;
     }
+    @include tablet {
+      &__title {
+        font-size: rem(20px);
+        font-weight: 700;
+      }
 
+      &__description:nth-child(2) {
+        font-size: rem(14px);
+        color: $gray-100;
+      }
+
+      &__description:last-child {
+        font-size: rem(16px);
+      }
+
+      &__cover {
+        @include size(100px, 100px);
+        background: rgba(rgb(240, 229, 168), 0.3);
+        border-radius: rem(8px);
+        overflow: hidden;
+      }
+    }
     // &__img {
     // }
   }
