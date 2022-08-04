@@ -19,6 +19,9 @@ main {
     @include scroll();
     gap: rem(36px);
     height: 100%;
+    &.fast {
+      justify-content: space-around;
+    }
 
     &:first-child {
       padding-left: rem(27px);
@@ -30,20 +33,22 @@ main {
   }
 
   &__link {
+    font-size: rem(20px);
     white-space: nowrap;
     overflow: hidden;
-    font-size: rem(20px);
     text-align: center;
     line-height: 150%;
     width: 100%;
     color: $gray-100;
+    &.fast {
+      font-size: rem(23px);
+    }
   }
 
   .underbar--active {
     font-weight: 800;
     color: $black-100;
   }
-
 }
 
 .sub-navigation {

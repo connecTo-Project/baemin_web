@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Document</title>
+
   </head>
   <body>
     <!-- 해더 -->
@@ -26,47 +28,54 @@
           <button class="search-form__button-submit" type="submit"></button>
         </fieldset>
       </form>
-    </header>
+    </header>  
 
     <!-- 메인 -->
     <main class="main">
-      <h2 class="sr-only">가게 리스트</h2>
-      <nav class="navigation" aria-label="메뉴 목록">
-        <ul class="navigation__list">
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-          <li><a class="navigation__link" href="/"></a></li>
-        </ul>
-      </nav>
-      <nav class="sub-navigation" aria-label="정렬 기준">
-        <ul class="sub-navigation__list">
-          <li><a class="sub-navigation__link" href="/"></a></li>
-          <li><a class="sub-navigation__link" href="/"></a></li>
-          <li><a class="sub-navigation__link" href="/"></a></li>
-          <li><a class="sub-navigation__link" href="/"></a></li>
+      <h2 class="sr-only">메뉴 세부 리스트</h2>
+      <nav class="navigation fast" aria-label="메뉴 목록">
+        <ul class="navigation__list fast">
+          <li><a class="underbar--active navigation__link fast" href="/">돈가스 </a></li>
+          <li><a class="navigation__link fast" href="/">회</a></li>
+          <li><a class="navigation__link fast" href="/">일식</a></li>
         </ul>
       </nav>
       <ul class="store-info__list">
-        <li class="store-info__item">
-          <a class="store-info__link" href="/">
-            <figure class="store-info__img">
-              <img src="/" alt="" />
-            </figure>
-            <dl class="store-description">
+        <li class="recommend-store__item">
+          <a href="/" class="recommend-store__link">
+            <dl class="recommend-store__container">
               <dt class="sr-only">상호명</dt>
-              <dd class="store-description__name">피자</dd>
+              <dd class="recommend-store__name">
+                채련이네 초계국수(경기도점)
+              </dd>
               <dt class="sr-only">별점</dt>
-              <dd class="store-description__rating-star">5.0</dd>
-              <dt class="store-description__ㅡmin-price-label">최소주문금액</dt>
-              <dd class="store-description__ㅡmin-price">15,900원</dd>
-              <dt calss="store-description__delivery-tip-label">배달팁</dt>
-              <dd calss="store-description__delivery-tip">0원~1,000원</dd>
+              <dd class="recommend-store__star">4.9</dd>
+              <br />
+              <dt class="recommend-store__min-price-label">최소주문</dt>
+              <dd class="recommend-store__min-price">95,900원</dd>
+              <dt class="recommend-store__delivery-tip-label">배달팁</dt>
+              <dd class="recommend-store__delivery-tip">0원~1,000원</dd>
               <dt class="sr-only">소요시간</dt>
-              <dd class="store-description__time">45분~69분</dd>
+              <dd class="recommend-store__time">45분~69분</dd>
+            </dl>
+          </a>
+        </li>
+        <li class="recommend-store__item">
+          <a href="/" class="recommend-store__link">
+            <dl class="recommend-store__container">
+              <dt class="sr-only">상호명</dt>
+              <dd class="recommend-store__name">
+                채련이네 초계국수(경기도점)
+              </dd>
+              <dt class="sr-only">별점</dt>
+              <dd class="recommend-store__star">4.9</dd>
+              <br />
+              <dt class="recommend-store__min-price-label">최소주문</dt>
+              <dd class="recommend-store__min-price">95,900원</dd>
+              <dt class="recommend-store__delivery-tip-label">배달팁</dt>
+              <dd class="recommend-store__delivery-tip">0원~1,000원</dd>
+              <dt class="sr-only">소요시간</dt>
+              <dd class="recommend-store__time">45분~69분</dd>
             </dl>
           </a>
         </li>
@@ -89,8 +98,8 @@
         <span>호스팅서비스제공자 (주)우아한형제들</span>
         <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
         <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-        <span>전자금융분쟁처리 Tel <a href="1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
-        <span>Fax <a href="050-6050-0400">050-6050-0400</a></span>
+        <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
+        <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
       </address>
       <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
     </footer>
