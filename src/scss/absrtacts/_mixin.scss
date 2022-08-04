@@ -1,0 +1,172 @@
+@use "./unit" as *;
+@mixin size($w: 0, $h: 0) {
+  width: $w;
+  height: $h;
+}
+@mixin bg($file, $w: 100%, $h: 100%) {
+  background-image: url(../asset/image/#{$file});
+  background-repeat: no-repeat;
+  background-size: $w $h;
+}
+
+@mixin bgRecommend($file) {
+  background-image: url(../asset/image/#{$file});
+  background-repeat: no-repeat;
+}
+// 여백 관련 믹스인
+@mixin autoMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin marginX($marginX: 0) {
+  margin-left: rem($marginX);
+  margin-right: rem($marginX);
+}
+
+@mixin marginY($marginY: 0) {
+  margin-top: rem($marginY);
+  margin-bottom: rem($marginY);
+}
+
+@mixin paddingX($paddingX: 0) {
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin paddingY($paddingY: 0) {
+  padding-top: rem($paddingY);
+  padding-bottom: rem($paddingY);
+}
+
+@mixin paddingTL($paddingT: 0, $paddingL: 0) {
+  padding-top: rem($paddingT);
+  padding-left: rem($paddingL);
+}
+
+// position 관련 믹스인
+
+@mixin pos($pos: absolute, $t: initial, $l: initial) {
+  position: $pos;
+  top: $t;
+  left: $l;
+}
+
+// @mixin posLeft($t, $l, $pos: absolute) {
+//   position: $pos;
+//   top: rem($t);
+//   left: rem($l);
+// }
+// @mixin posRight($t, $r, $pos: absolute) {
+//   position: $pos;
+//   top: rem($t);
+//   right: rem($r);
+// }
+
+@mixin posCenterX($pos: absolute) {
+  position: $pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin posCenterY($pos: absolute) {
+  position: $pos;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin posCenter($pos: absolute) {
+  position: $pos;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 트랜스폼 관련 믹스인
+@mixin transRotate($tx, $ty, $rotate: 0) {
+  top: 50%;
+  transform: translate($tx, $ty) rotate(#{$rotate} + "deg");
+}
+
+// 말줄임표 믹스인
+@mixin textEllipis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// 반응형 iframe
+@mixin responseIframe($w: 16, $h: 9) {
+  position: relative;
+  width: 100%;
+  height: 0 !important;
+  padding-top: math.div($h, $w) * 100%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// float 이슈 해결을 위한 믹스인
+@mixin clearFix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// 고해상도 디스플레이를 위한 배경이미지 관련 믹스인
+@mixin bgRetina($file, $type) {
+  background-image: url("./../assets/images/" + $file + "." + $type);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+    & {
+      background-image: url("./../assets/images/" + $file + "@2x." + $type);
+    }
+  }
+}
+
+// 텍스트 스타일 믹스인
+@mixin textStyle($size) {
+  font-size: rem($size);
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+
+// @mixin textHeading($size) {
+//   font-weight: 700;
+//   letter-spacing: 0.02em;
+//   line-height: 1.4;
+//   font-size: rem($size);
+// }
+
+// 그리드 믹스인
+@mixin gridbox($column-count: 12, $gap: 20px) {
+  display: grid;
+  grid-template-columns: repeat($column-count, 1fr);
+  grid-template-rows: auto;
+  gap: rem($gap);
+}
+
+// 스크롤 믹스인
+@mixin scroll() {
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// flex 믹스인
+@mixin flex($dir: row, $wrap: nowrap, $align-items: center) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  align-items: $align-items;
+}
