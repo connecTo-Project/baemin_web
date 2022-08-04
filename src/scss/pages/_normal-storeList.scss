@@ -4,8 +4,10 @@
 
 
 main {
-  padding-top: 10px;
+  padding-top: rem(10px);
+  padding-bottom: rem(30px);
 }
+
 .main__store-list {
   background-color: $white;
 }
@@ -19,6 +21,10 @@ main {
     @include scroll();
     gap: rem(36px);
     height: 100%;
+    @include tablet {
+      justify-content: space-around;
+    }
+
     &.fast {
       justify-content: space-around;
     }
@@ -40,6 +46,7 @@ main {
     line-height: 150%;
     width: 100%;
     color: $gray-100;
+
     &.fast {
       font-size: rem(23px);
     }
@@ -67,6 +74,9 @@ main {
     &:last-child {
       padding-right: rem(27px);
     }
+    @include tablet {
+      justify-content: space-around;
+    }
   }
 
   &__link {
@@ -81,42 +91,59 @@ main {
 }
 
 .store {
-  &__item {
-    border-bottom: 1px solid $gray-70;
-  }
-
   &__list {
+    display: flex;
+    flex-flow: column nowrap;
     height: 100%;
     width: 100%;
   }
 
-  &__link {
-    height: rem(132px);
+  &__item {
+    border-bottom: 1px solid $gray-70;
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
-
   &__img {
-    float: left;
     width: rem(86px);
     height: rem(86px);
-    margin: rem(22px) rem(19px) auto rem(19px);
-    border-radius: rem(25px);
+    margin: rem(22px) rem(19px) rem(22px) rem(19px);
+    float: left;
+
+    img {
+      border-radius: rem(25px);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &-description {
-    display: inline-block;
+    position: relative;
+    min-height: rem(86px);
+    dt,
+    dd {
+      display: inline-block;
+      line-height: 120%;
+    }
+
+    height: 100%;
     margin-top: rem(22px);
     margin-bottom: rem(22px);
-    font-size: rem(12px);;
-
+    font-size: rem(14px);
 
     &__name {
-      font-size: rem(18px);
+      display: block;
+      font-size: rem(20px);
       font-weight: 600;
     }
+
     &__star {
+      display: block;
       font-weight: 600;
     }
+
     &__star::before {
       content: "";
       background: url("../asset/image/small_star.png") no-repeat;
@@ -127,10 +154,33 @@ main {
       height: rem(12px);
       margin-right: rem(4px);
     }
+
+    &__time {
+      font-size: rem(12px);
+      border-radius: rem(30px);
+      background: $gray-50;
+      padding: rem(5px) rem(7px) rem(5px) rem(20px);
+      position: absolute;
+      bottom: 0;
+      left: rem(124px);
+      justify-content: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(../asset/image/phone_call.png);
+        background-size: contain;
+        width: rem(16px);
+        height: rem(16px);
+        position: absolute;
+        top: 4px;
+        left: 3px;
+      }
+    }
+
   }
-}
+  .store__item:last-child {
+    border-bottom: none;
+  }
 
-.store__item:last-child {
-  border-bottom: none;
 }
-
