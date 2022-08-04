@@ -57,6 +57,9 @@
   padding-right: 40%;
   line-height: 1.3;
   text-shadow: 2px 2px 2px $black-100;
+  &:focus-within{
+    outline: 2px solid rgba(blue,0.5);
+  }
 }
 
 .recommend__item:nth-child(1){
@@ -147,7 +150,7 @@
   position: relative;
 }
 
-.recommend-store__item:nth-child(2){
+.recommend-store__item:nth-child(1){
   margin-top: 13px;
 }
 
@@ -155,6 +158,7 @@
   background: url(../../asset/image/recommend_img2.jpeg);
   background-position: center -90px;
   background-size: cover;
+  margin-top: 13px;
 }
 
 .recommend-store__link {

@@ -1,352 +1,279 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <script defer="../js/jquery-1.12.3.js"></script>
-    <script defer="../js/scripts.js"></script>
-    <title>배달의민족 메뉴 페이지</title>
-  </head>
 
-  <body>
-    <!-- 스킵 내비 -->
-    <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
-    <!-- 헤더 -->
-    <header class="header">
-      <h1 class="header__logo">
-        <a class="logo__link" href="/"
-          ><img
-            class="logo__img"
-            src="../asset/image/logo.png"
-            alt="배달의 민족"
-        /></a>
-      </h1>
-      <div class="nav-wrapper">
-        <button class="header__address-button">
-          강남 미왕빌딩 11층<img src="../asset/image/dropDown.png" alt="" />
-        </button>
-        <a class="category" href="/"
-          ><img src="../asset/image/header_menu.png" alt="전체 메뉴"
-        /></a>
-        <button class="header__alert-button">
-          <img src="../asset/image/header_alarm.png" alt="알림" />
-        </button>
-        <a class="mypage" href="/"
-          ><img src="../asset/image/header_mypage.png" alt="마이페이지"
-        /></a>
-      </div>
-      <form class="search-form" action="">
-        <fieldset>
-          <legend class="sr-only">검색 폼</legend>
-          <label class="sr-only" for="">검색</label>
-          <input
-            class="search-form__input"
-            placeholder="찾아라! 맛있는 음식과 맛집"
-            type="search"
-          />
-          <button class="search-form__button-submit" type="submit"></button>
-        </fieldset>
-      </form>
-    </header>
-    <!-- 메뉴페이지 메인 -->
-    <main class="main__menu">
-      <nav aria-label="콘텐츠 메뉴" class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">배민1</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <script defer="../js/jquery-1.12.3.js"></script>
+  <script defer="../js/scripts.js"></script>
+  <title>배달의민족 메뉴 페이지</title>
+</head>
+
+<body>
+  <!-- 스킵 내비 -->
+  <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
+  <!-- 헤더 -->
+  <header class="header">
+    <h1 class="header__logo">
+      <a class="logo__link" href="/"><img class="logo__img" src="../asset/image/logo.png" alt="배달의 민족" /></a>
+    </h1>
+    <div class="nav-wrapper">
+      <button class="header__address-button">
+        강남 미왕빌딩 11층<img src="../asset/image/dropDown.png" alt="" />
+      </button>
+      <a class="category" href="#"><img src="../asset/image/header_menu.png" alt="전체 메뉴" /></a>
+      <button class="header__alert-button">
+        <img src="../asset/image/header_alarm.png" alt="알림" />
+      </button>
+      <a class="mypage" href="#"><img src="../asset/image/header_mypage.png" alt="마이페이지" /></a>
+    </div>
+    <form class="search-form" action="">
+      <fieldset>
+        <legend class="sr-only">검색 폼</legend>
+        <label class="sr-only" for="">검색</label>
+        <input class="search-form__input" placeholder="찾아라! 맛있는 음식과 맛집" type="search" />
+        <button class="search-form__button-submit" type="submit"></button>
+      </fieldset>
+    </form>
+  </header>
+  <!-- 메뉴페이지 메인 -->
+  <main id="skip" class="main__menu">
+    <nav aria-label="콘텐츠 메뉴" class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">배민1</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">배달</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">포장</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">B마트1</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">배민스토어</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">쇼핑라이브</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">선물하기</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="food-category">
+      <h2 class="sr-only">메뉴 카테고리</h2>
+
+      <!-- 상단 배너 -->
+      <article class="banner">
+        <h3 class="banner__title sr-only">광고</h3>
+        <ul class="banner__list">
+          <li class="banner__item">
+            <a href="#" class="banner__link"><img src="../asset/image/menu_banner_img1.png" alt=""
+                class="banner__img" /></a>
           </li>
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">배달</a>
+          <li class="banner__item">
+            <a href="#" class="banner__link"><img src="../asset/image/menu_banner_img2.png" alt=""
+                class="banner__img" /></a>
           </li>
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">포장</a>
+          <li class="banner__item">
+            <a href="#" class="banner__link"><img src="../asset/image/menu_banner_img3.png" alt=""
+                class="banner__img" /></a>
           </li>
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">B마트1</a>
+        </ul>
+      </article>
+
+      <!-- 메뉴 추천 광고 -->
+      <ul class="recommend">
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">알곱창 한 판</a>
+        </li>
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">치즈가 폭발 </a>
+        </li>
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">더위야 가라! </a>
+        </li>
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">대세는 도시락 </a>
+        </li>
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">라면은 맛있어</a>
+        </li>
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">신논현 맛집</a>
+        </li>
+        <li class="recommend__item">
+          <a href="./storeList.html" class="recommend__link">따끈한 스프</a>
+        </li>
+      </ul>
+      <!-- 메뉴 목록 -->
+      <ul class="menu-type">
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_1.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">족발&#183;보쌈</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_2.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">찜&#183;탕&#183;찌개</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_3.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">치킨</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_4.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">피자</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_5.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">야식</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_6.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">한식</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_7.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">패스트푸드</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_8.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">분식</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_9.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">중식</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_10.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">디저트</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_11.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">채식</p>
+          </a>
+        </li>
+        <li class="menu-type__item">
+          <a href="./storeList.html" class="menu-type__link"><img src="../asset/image/menu_type_item_12.png" alt=""
+              class="menu-type__image" />
+            <p class="menu-type__text">아시안</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="recommend-store">
+      <h2 class="sr-only">스토어</h2>
+      <nav aria-label="정렬 기준" class="sub-navigation">
+        <ul class="sub-navigation__list">
+          <li class="sub-navigation__item">
+            <a href="#" class="sub-navigation__link">배달팁 낮은 순</a>
           </li>
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">배민스토어</a>
+          <li class="sub-navigation__item">
+            <a href="#" class="sub-navigation__link">기본순</a>
           </li>
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">쇼핑라이브</a>
+          <li class="sub-navigation__item">
+            <a href="#" class="sub-navigation__link">주문 많은 순</a>
           </li>
-          <li class="navigation__item">
-            <a href="/" class="navigation__link">선물하기</a>
+          <li class="sub-navigation__item">
+            <a href="#" class="sub-navigation__link">별점 높은 순</a>
+          </li>
+          <li class="sub-navigation__item">
+            <a href="#" class="sub-navigation__link">가까운 순</a>
+          </li>
+          <li class="sub-navigation__item">
+            <a href="#" class="sub-navigation__link">찜 많은 순</a>
           </li>
         </ul>
       </nav>
-      <section class="food-category">
-        <h2 class="sr-only">메뉴 카테고리</h2>
-
-        <!-- 상단 배너 -->
-        <article class="banner">
-          <h3 class="banner__title sr-only">광고</h3>
-          <ul class="banner__list">
-            <li class="banner__item">
-              <a href="/" class="banner__link"
-                ><img
-                  src="../asset/image/menu_banner_img1.png"
-                  alt=""
-                  class="banner__img"
-              /></a>
-            </li>
-            <li class="banner__item">
-              <a href="/" class="banner__link"
-                ><img
-                  src="../asset/image/menu_banner_img2.png"
-                  alt=""
-                  class="banner__img"
-              /></a>
-            </li>
-            <li class="banner__item">
-              <a href="/" class="banner__link"
-                ><img
-                  src="../asset/image/menu_banner_img3.png"
-                  alt=""
-                  class="banner__img"
-              /></a>
-            </li>
-          </ul>
-        </article>
-
-        <!-- 메뉴 추천 광고 -->
-        <ul class="recommend">
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">알곱창 한 판</a>
-          </li>
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">치즈가 폭발 </a>
-          </li>
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">더위야 가라! </a>
-          </li>
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">대세는 도시락 </a>
-          </li>
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">라면은 맛있어</a>
-          </li>
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">신논현 맛집</a>
-          </li>
-          <li class="recommend__item">
-            <a href="/" class="recommend__link">따끈한 스프</a>
-          </li>
-        </ul>
-        <!-- 메뉴 목록 -->
-        <ul class="menu-type">
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_1.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">족발&#183;보쌈</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_2.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">찜&#183;탕&#183;찌개</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_3.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">치킨</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_4.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">피자</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_5.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">야식</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_6.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">한식</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_7.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">패스트푸드</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_8.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">분식</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_9.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">중식</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_10.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">디저트</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_11.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">채식</p>
-            </a>
-          </li>
-          <li class="menu-type__item">
-            <a href="./storeList.html" class="menu-type__link"
-              ><img
-                src="../asset/image/menu_type_item_12.png"
-                alt=""
-                class="menu-type__image"
-              />
-              <p class="menu-type__text">아시안</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="recommend-store">
-        <h2 class="sr-only">스토어</h2>
-        <nav aria-label="정렬 기준" class="sub-navigation">
-          <ul class="sub-navigation__list">
-            <li class="sub-navigation__item">
-              <a href="/" class="sub-navigation__link">배달팁 낮은 순</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="/" class="sub-navigation__link">기본순</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="/" class="sub-navigation__link">주문 많은 순</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="/" class="sub-navigation__link">별점 높은 순</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="/" class="sub-navigation__link">가까운 순</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="/" class="sub-navigation__link">찜 많은 순</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="recommend-store__list">
-          <li class="recommend-store__item">
-            <a href="./store.html" class="recommend-store__link">
-              <dl class="recommend-store__container">
-                <dt class="sr-only">상호명</dt>
-                <dd class="recommend-store__name">??????</dd>
-                <dt class="sr-only">별점</dt>
-                <dd class="recommend-store__star">0.9</dd>
-                <br />
-                <dt class="recommend-store__min-price-label">최소주문</dt>
-                <dd class="recommend-store__min-price">95,900원</dd>
-                <dt class="recommend-store__delivery-tip-label">배달팁</dt>
-                <dd class="recommend-store__delivery-tip">30,000원~80,000원</dd>
-                <dt class="sr-only">소요시간</dt>
-                <dd class="recommend-store__time">45분~69분</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="recommend-store__item">
-            <a href="./store.html" class="recommend-store__link">
-              <dl class="recommend-store__container">
-                <dt class="sr-only">상호명</dt>
-                <dd class="recommend-store__name">현정이네 알곱창(잠실점)</dd>
-                <dt class="sr-only">별점</dt>
-                <dd class="recommend-store__star">5.0</dd>
-                <br />
-                <dt class="recommend-store__min-price-label">최소주문</dt>
-                <dd class="recommend-store__min-price">15,900원</dd>
-                <dt class="recommend-store__delivery-tip-label">배달팁</dt>
-                <dd class="recommend-store__delivery-tip">0원~1,000원</dd>
-                <dt class="sr-only">소요시간</dt>
-                <dd class="recommend-store__time">30분~55분</dd>
-              </dl>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <ul class="footer__list">
-        <li><a class="footer__link" href="/">사업자정보확인</a></li>
-        <li><a class="footer__link" href="/">이용약관</a></li>
-        <li><a class="footer__link" href="/">전자금융거래이용약관</a></li>
-        <li><a class="footer__link" href="/">개인정보처리방침</a></li>
+      <ul class="recommend-store__list">
+        <li class="recommend-store__item">
+          <a href="./store.html" class="recommend-store__link">
+            <dl class="recommend-store__container">
+              <dt class="sr-only">상호명</dt>
+              <dd class="recommend-store__name">??????</dd>
+              <dt class="sr-only">별점</dt>
+              <dd class="recommend-store__star">0.9</dd>
+              <br />
+              <dt class="recommend-store__min-price-label">최소주문</dt>
+              <dd class="recommend-store__min-price">95,900원</dd>
+              <dt class="recommend-store__delivery-tip-label">배달팁</dt>
+              <dd class="recommend-store__delivery-tip">30,000원~80,000원</dd>
+              <dt class="sr-only">소요시간</dt>
+              <dd class="recommend-store__time">45분~69분</dd>
+            </dl>
+          </a>
+        </li>
+        <li class="recommend-store__item">
+          <a href="./store.html" class="recommend-store__link">
+            <dl class="recommend-store__container">
+              <dt class="sr-only">상호명</dt>
+              <dd class="recommend-store__name">현정이네 알곱창(잠실점)</dd>
+              <dt class="sr-only">별점</dt>
+              <dd class="recommend-store__star">5.0</dd>
+              <br />
+              <dt class="recommend-store__min-price-label">최소주문</dt>
+              <dd class="recommend-store__min-price">15,900원</dd>
+              <dt class="recommend-store__delivery-tip-label">배달팁</dt>
+              <dd class="recommend-store__delivery-tip">0원~1,000원</dd>
+              <dt class="sr-only">소요시간</dt>
+              <dd class="recommend-store__time">30분~55분</dd>
+            </dl>
+          </a>
+        </li>
       </ul>
-      <address class="adress">
-        <span>(주)우아한형제들</span>
-        <span>대표이사 김범준</span>
-        <span>사업자등록번호 120-87-65763</span>
-        <span>통신판매업 서울 송파-0515</span>
-        <span>호스팅서비스제공자 (주)우아한형제들</span>
-        <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
-        <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-        <span
-          >전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료),
-          <a href="080-849-0987">080-849-0987</a>(무료)</span
-        >
-        <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
-      </address>
-      <p>
-        (주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다.
-        따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지
-        않습니다.
-      </p>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="footer__list">
+      <li><a class="footer__link" href="#">사업자정보확인</a></li>
+      <li><a class="footer__link" href="#">이용약관</a></li>
+      <li><a class="footer__link" href="#">전자금융거래이용약관</a></li>
+      <li><a class="footer__link" href="#">개인정보처리방침</a></li>
+    </ul>
+    <address class="adress">
+      <span>(주)우아한형제들</span>
+      <span>대표이사 김범준</span>
+      <span>사업자등록번호 120-87-65763</span>
+      <span>통신판매업 서울 송파-0515</span>
+      <span>호스팅서비스제공자 (주)우아한형제들</span>
+      <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
+      <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
+      <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료),
+        <a href="080-849-0987">080-849-0987</a>(무료)</span>
+      <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
+    </address>
+    <p>
+      (주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다.
+      따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지
+      않습니다.
+    </p>
+  </footer>
+</body>
+
 </html>
