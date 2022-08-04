@@ -16,13 +16,11 @@
 
   &-info__wrapper {
     background: #fefefe;
-    width: 90%;
-    height: rem(230px);
+    @include size(90%, 230px);
+    @include autoMargin;
     border-radius: 5px;
     transform: translateY(-30px);
     box-shadow: rem(3px) rem(3px) rem(2px) #eee, rem(-1px) 0 rem(2px) #eee;
-    margin-left: auto;
-    margin-right: auto;
 
     @include tablet {
       padding: 0 rem(180px);
@@ -30,14 +28,13 @@
   }
 
   &-info__list {
-    display: flex;
-    flex-flow: row wrap;
+    @include flex(row, wrap, strech);
     justify-content: center;
     gap: rem(5px);
 
     dd:nth-child(6)::after {
       content: "|";
-      color: #d7d7d7;
+      color: $gray-70;
       margin-left: rem(6px);
     }
   }
@@ -70,7 +67,7 @@
 
   &-info__data,
   &-info__description {
-    color: #888888;
+    color: $gray-100;
     margin-top: rem(10px);
   }
 
@@ -116,13 +113,11 @@
     color: #ef8a32;
     font-size: rem(18px);
     font-weight: 600;
-    width: 90%;
-    height: rem(50px);
+    @include size(90%, rem(50px));
     border: rem(1px) solid #d7d7d7;
     border-radius: rem(5px);
     margin-top: rem(-20px);
-    margin-left: auto;
-    margin-right: auto;
+    @include autoMargin;
     cursor: pointer;
     background: url("../../asset/image/double_coupon.png") no-repeat rem(60px) 0 / contain, url("../../asset/image/download_icon.png") no-repeat rem(286px) 13px / 20px 20px, #f6f6f6;
 
@@ -140,7 +135,7 @@
     color: #888;
 
     .selected {
-      color: #050505;
+      color: $black-100;
       font-weight: 700;
     }
   }
@@ -154,8 +149,8 @@
 
   &-delivery {
     padding: rem(20px);
-    border-top: 1px solid #d7d7d7;
-    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid $gray-70;
+    border-bottom: 1px solid $gray-70;
 
     dd:last-child::after {
       content: "자세히";
@@ -187,13 +182,12 @@
 
   &-detail {
     margin-top: rem(10px);
-    background: #fff;
+    background: $white;
   }
 
   &-detail__list {
-    display: flex;
+    @include flex($align-items: center);
     justify-content: space-around;
-    align-items: center;
     color: #888888;
     text-align: center;
 
@@ -212,8 +206,7 @@
 
   &-detail__link {
     display: inline-block;
-    width: 100%;
-    height: 100%;
+    @include size(100%, 100%);
   }
 
   &-nav__list {
@@ -230,8 +223,7 @@
   }
   &-nav__move {
     display: block;
-    width: 100%;
-    height: 100%;
+    @include size(100%, 100%);
     padding: rem(5px);
   }
 
@@ -246,7 +238,7 @@
     &-nav__item {
       border: 1px solid #d7d7d7;
       border-radius: rem(30px);
-      padding: rem(2px) rem(5px);
+      padding: rem(10px) rem(16px);
     }
   }
 
@@ -328,13 +320,14 @@
         overflow: hidden;
       }
     }
-    // &__img {
-    // }
+    &__img {
+      @include size(100%, 100%);
+    }
   }
 
   &-category {
-    background: #f6f6f6;
-    border-bottom: 1px solid #d7d7d7;
+    background: $gray-50;
+    border-bottom: 1px solid $gray-70;
     &[open] summary::after {
       transform: rotate(180deg) translate(10px, 3px);
     }
@@ -348,8 +341,7 @@
     &::after {
       content: "";
       float: right;
-      width: rem(30px);
-      height: rem(20px);
+      @include size(30px, 20px);
       background-image: url("../../asset/image/dropDown.png");
       background-size: contain;
       background-repeat: no-repeat;
