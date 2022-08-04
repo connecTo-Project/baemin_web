@@ -1,10 +1,9 @@
 @use "../themes" as *;
 @use "../absrtacts" as *;
 
-
-// 상단 배너 
+// 상단 배너
 .banner {
-  width: 428px;
+  width: 100%;
   height: rem(130px);
   margin: 0 auto;
   overflow: hidden;
@@ -16,6 +15,10 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @include tablet {
+    transform: none !important;
+  }
 }
 
 .banner__item {
@@ -23,11 +26,12 @@
 }
 
 .banner__img {
-  width: 428px;
+  display: block;
+  width: rem(428px);
   height: 130px;
 }
 
-// 메뉴 추천 광고 
+// 메뉴 추천 광고
 .recommend {
   width: 428px;
   display: flex;
@@ -45,7 +49,7 @@
   border-radius: rem(15px);
   background: url(../../asset/image/recommend_img6.jpeg) no-repeat;
   background-size: cover;
-  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.5) inset;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5) inset;
   color: $white;
   font-size: 17px;
   font-weight: 700;
@@ -55,9 +59,7 @@
   line-height: 1.3;
 }
 
-
-
-// 메뉴 타입 선택 리스트 
+// 메뉴 타입 선택 리스트
 .food-category {
   background-image: url(../../asset/image/menu_type_background.jpg);
   background-size: cover;
@@ -97,7 +99,7 @@
   margin-top: rem(2px);
 }
 
-// 추천 가게 리스트 
+// 추천 가게 리스트
 .recommend-store__item {
   width: rem(390px);
   height: rem(242px);
@@ -131,7 +133,6 @@
   display: inline-block;
 }
 
-
 .recommend-store__name {
   font-size: rem(18px);
   font-weight: 700;
@@ -147,7 +148,7 @@
   padding-left: 18px;
 }
 
-.recommend-store__star::before{
+.recommend-store__star::before {
   content: "";
   display: inline-block;
   background-image: url(../../asset/image/small_star.png);
@@ -169,7 +170,7 @@
   right: 15px;
 }
 
-.recommend-store__time::before{
+.recommend-store__time::before {
   content: "";
   display: inline-block;
   background-image: url(../../asset/image/phone_call.png);

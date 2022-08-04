@@ -2,6 +2,8 @@
 @use "../themes" as *;
 
 .fast-store {
+  margin-top: -15px !important;
+
   p::after {
     content: "";
     width: 0;
@@ -10,6 +12,11 @@
 
   .height-up {
     height: 250px;
+  }
+  @include tablet {
+    .height-up {
+      width: 100%;
+    }
   }
 
   &-info {
