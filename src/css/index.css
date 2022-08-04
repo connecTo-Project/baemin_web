@@ -386,43 +386,46 @@ legend {
   margin: -1px;
 }
 
-.footer {
-  color: #888888;
-  border-top: 20px solid #FFFFFF;
+.footer-inner {
+  padding: 1.1875rem;
+  margin-top: 1.875rem;
+  font-size: 0.75rem;
 }
-.footer__list {
-  border-top: 1px solid #d7d7d7;
+.footer-inner .footer__list {
   display: flex;
   flex-flow: row nowrap;
-  font-size: 0.75rem;
   justify-content: flex-start;
+  column-gap: 0.75rem;
 }
-.footer__list a::after {
-  content: "|";
-  position: absolute;
-  margin-left: 0.9375rem;
+.footer-inner .footer__list .footer__link {
+  white-space: nowrap;
 }
-.footer__list :last-child a::after {
-  content: "";
-}
-.footer__link {
-  display: block;
-  padding: 0.875rem;
+.footer-inner .footer__list li {
   position: relative;
 }
-.footer .adress {
-  display: flex;
-  flex-flow: column;
-  font-size: 0.75rem;
-  padding: 0.875rem;
-  gap: 7px;
+.footer-inner .footer__list li:nth-child(n+2)::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  background: #888888;
+  top: 0;
+  left: -6px;
 }
-.footer .adress span:first-child {
+.footer-inner .address {
+  margin-top: 1.25rem;
+}
+.footer-inner .address span:nth-child(1) {
   font-size: 1rem;
-  margin-bottom: 0.3125rem;
+  display: block;
+  margin-bottom: 0.375rem;
 }
-.footer p {
-  padding: 0 0.875rem 0.875rem 0.875rem;
+.footer-inner .address span:nth-child(n+2):nth-child(-n+9) {
+  display: block;
+  margin-top: 0.1875rem;
+}
+.footer-inner p {
+  margin-top: 1.25rem;
   font-size: 0.75rem;
 }
 
@@ -431,6 +434,12 @@ body {
   width: 26.75rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 826px) {
+  body {
+    width: 51.625rem;
+    height: 0;
+  }
 }
 
 h3 {
@@ -476,8 +485,7 @@ button {
   position: relative;
   background: #40bfb8;
   padding: 1.1875rem;
-  border-radius: 0 0 10px 10px;
-  display: flow-root;
+  border-radius: 0 0 20px 20px;
 }
 .header .nav-wrapper {
   display: flex;
@@ -496,26 +504,28 @@ button {
   text-align: left;
   margin-right: auto;
 }
-.header__address-button img {
-  width: 1.875rem;
-  height: 1.25rem;
-  transform: translate(5px, 3px);
-  filter: brightness(0) invert(1);
-}
-.header .category, .header__alert-button,
-.header .mypage {
+.header .category, .header__alert-button, .header .mypage {
   width: 2rem;
   height: 2rem;
   border: 0;
   margin-top: 1.25rem;
 }
-.header .category img, .header__alert-button img,
-.header .mypage img {
-  filter: brightness(0) invert(1);
+.header .category {
+  background-image: url(../../asset/image/header_menu.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .header__alert-button {
+  background-image: url(../../asset/image/header_alarm.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+.header .mypage {
+  background-image: url(../../asset/image/header_mypage.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .header .search-form {
   position: relative;
@@ -529,8 +539,11 @@ button {
   border: 0;
 }
 .header .search-form__button-submit {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background-image: url(../../asset/image/header_search.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   position: absolute;
   top: 0.0625rem;
   right: 0.0625rem;
@@ -543,21 +556,111 @@ main {
   margin-top: -10px !important;
 }
 
-.home p {
-  font-size: 20px;
+.mode {
+  display: flex;
+  background: #ffffff;
+  color: #FFFFFF;
+  gap: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  font-family: hanna;
+  text-shadow: 2px 4px 1px black;
+  position: fixed;
+  top: 50%;
+  width: 26.75rem;
+  height: 0;
 }
-.home a {
-  color: blue;
-  border: 1px solid blue;
+.mode .nomal-img {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../../asset/image/mealkit_person.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: contain;
+  position: absolute;
+  top: -370px;
+  left: 0;
+}
+@media (min-width: 826px) {
+  .mode .nomal-img {
+    left: 100px;
+  }
+}
+.mode .quick-img {
+  display: inline-block;
+  width: 11.25rem;
+  height: 8.75rem;
+  background-image: url(../../asset/image/cat_packaging.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: contain;
+  position: absolute;
+  top: -290px;
+  right: 0;
+}
+@media (min-width: 826px) {
+  .mode .quick-img {
+    right: 100px;
+  }
+}
+@media (min-width: 826px) {
+  .mode {
+    width: 51.625rem;
+    height: 0;
+  }
+}
+
+.normal-mode,
+.quick-mode {
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: #40bfb8;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.16);
+  transform: translateY(-50%);
+}
+.normal-mode:hover,
+.quick-mode:hover {
+  width: 19.375rem;
+  height: 19.375rem;
+  font-size: 3.5rem;
+  transition: all 0.5s;
+}
+.normal-mode:focus-within,
+.quick-mode:focus-within {
+  outline: 2px solid rgba(0, 0, 255, 0.3);
+}
+.normal-mode a,
+.quick-mode a {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: inline-block;
+  padding-top: 6.375rem;
+}
+
+.quick-mode {
+  background-color: #ef8a32;
 }
 
 .main__section {
-  background: yellow;
   padding: 1.1875rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: flex-start;
   row-gap: 0.875rem;
+}
+@media (min-width: 826px) {
+  .main__section {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 0.75rem;
+    grid-template-areas: "baemin baemin delivery delivery togo togo togo togo" "baemin baemin delivery delivery mart mart mealkit mealkit" "store store store store live gift special special" "ad ad ad ad . . . .";
+  }
 }
 .main__section article {
   background: #FFFFFF;
@@ -573,23 +676,161 @@ main {
 .main__section article a p {
   margin-top: 0.5rem;
 }
-.main__section .baeminone, .main__section .delivery {
+.main__section .baeminone {
   width: 11.8125rem;
   height: 12.75rem;
+  background-image: url(../../asset/image/mealkit_person.png);
+  background-repeat: no-repeat;
+  background-size: 70% 50%;
+  background-position-x: 3.125rem;
+  background-position-y: 6.5625rem;
+  position: relative;
 }
-.main__section .togo, .main__section .baeminstore {
+@media (min-width: 826px) {
+  .main__section .baeminone {
+    grid-area: baemin;
+  }
+}
+.main__section .baeminone:hover {
+  background-size: 75% 55%;
+  transition: all 0.5s;
+}
+.main__section .baeminone::after {
+  background-image: url(../../asset/image/ddabong.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  width: 2.25rem;
+  height: 2.25rem;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+.main__section .delivery {
+  width: 11.8125rem;
+  height: 12.75rem;
+  background-image: url(../../asset/image/main_delivery1_background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media (min-width: 826px) {
+  .main__section .delivery {
+    grid-area: delivery;
+  }
+}
+.main__section .delivery:hover {
+  background-size: 110% 110%;
+  transition: all 0.5s;
+}
+.main__section .togo {
   width: 100%;
   height: 5.25rem;
+  background-image: url(../../asset/image/cat_packaging.png);
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+  background-position: 16.5625rem;
 }
-.main__section .bmart, .main__section .mealkit {
+@media (min-width: 826px) {
+  .main__section .togo {
+    grid-area: togo;
+  }
+}
+.main__section .togo:hover {
+  background-size: 35% 110%;
+  transition: all 0.5s;
+}
+.main__section .baeminstore {
+  width: 100%;
+  height: 5.25rem;
+  background-image: url(../../asset/image/heart_icon.png);
+  background-repeat: no-repeat;
+  background-size: 25% 100%;
+  background-position: 17.8125rem;
+}
+@media (min-width: 826px) {
+  .main__section .baeminstore {
+    grid-area: store;
+  }
+}
+.main__section .baeminstore:hover {
+  background-size: 28% 105%;
+  transition: all 0.5s;
+}
+.main__section .bmart {
   width: 11.8125rem;
   height: 6.5625rem;
+  background-image: url(../../asset/image/smile_pack.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: 6.25rem;
 }
-.main__section .shoppinglive, .main__section .gift {
+@media (min-width: 826px) {
+  .main__section .bmart {
+    grid-area: mart;
+  }
+}
+.main__section .bmart:hover {
+  background-size: 60% 110%;
+  transition: all 0.5s;
+}
+.main__section .mealkit {
+  width: 11.8125rem;
+  height: 6.5625rem;
+  background-image: url(../../asset/image/menu_type_item_11.png);
+  background-repeat: no-repeat;
+  background-size: 40% 50%;
+  background-position: 6.25rem 2.8125rem;
+}
+@media (min-width: 826px) {
+  .main__section .mealkit {
+    grid-area: mealkit;
+  }
+}
+.main__section .mealkit:hover {
+  background-size: 45% 55%;
+  transition: all 0.5s;
+}
+.main__section .shoppinglive {
   width: 5.5rem;
   height: 5.25rem;
+  background-image: url(../../asset/image/shopping_live.png);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: 50% 20%;
 }
-.main__section .shoppinglive h3, .main__section .gift h3 {
+@media (min-width: 826px) {
+  .main__section .shoppinglive {
+    grid-area: live;
+  }
+}
+.main__section .shoppinglive:hover {
+  background-size: 55% 55%;
+  transition: all 0.5s;
+}
+.main__section .shoppinglive h3 {
+  font-size: 0.875rem;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.main__section .gift {
+  width: 5.5rem;
+  height: 5.25rem;
+  background-image: url(../../asset/image/main_present.png);
+  background-repeat: no-repeat;
+  background-size: 30% 50%;
+  background-position: 50% 20%;
+}
+@media (min-width: 826px) {
+  .main__section .gift {
+    grid-area: gift;
+  }
+}
+.main__section .gift:hover {
+  background-size: 35% 55%;
+  transition: all 0.5s;
+}
+.main__section .gift h3 {
   font-size: 0.875rem;
   white-space: nowrap;
   text-align: center;
@@ -598,34 +839,67 @@ main {
 .main__section .special {
   width: 11.8125rem;
   height: 5.25rem;
+  background-image: url(../../asset/image/menu_type_item_1.png);
+  background-repeat: no-repeat;
+  background-size: 35% 100%;
+  background-position: 7.5rem;
+}
+@media (min-width: 826px) {
+  .main__section .special {
+    grid-area: special;
+  }
+}
+.main__section .special:hover {
+  background-size: 40% 110%;
+  transition: all 0.5s;
 }
 .main__section .ad {
   width: 100%;
-  height: 8.125rem;
+  height: 12.125rem;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 826px) {
+  .main__section .ad {
+    grid-area: ad;
+  }
+}
+.main__section .ad__list {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main__section .ad__item {
+  width: 100%;
+  height: 12.125rem;
+  float: left;
+}
+.main__section .ad__item:nth-child(1) {
+  background-image: url(../../asset/image/ad1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.main__section .ad__item:nth-child(2) {
+  background-image: url(../../asset/image/ad2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.main__section .ad__item:nth-child(3) {
+  background-image: url(../../asset/image/ad3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .main .member {
   display: flex;
   flex-flow: row nowrap;
-  background: yellow;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1.1875rem;
+  margin-top: 0.875rem;
   text-align: center;
-}
-.main .member__point {
-  border-radius: 15px 0 0 15px;
-}
-.main .member__point a {
-  border-radius: 15px 0 0 15px;
-}
-.main .member__like {
-  border-radius: 0 15px 15px 0;
-}
-.main .member__like a {
-  border-radius: 0 15px 15px 0;
+  column-gap: 3px;
 }
 .main .member li {
-  width: 6rem;
-  height: 5.25rem;
   background: #FFFFFF;
 }
 .main .member li a {
@@ -633,6 +907,66 @@ main {
   width: 100%;
   height: 100%;
   padding-top: 60px;
+}
+@media (min-width: 826px) {
+  .main .member {
+    width: 15.625rem;
+    height: 0;
+    position: relative;
+    top: -213px;
+    right: -390px;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 12px;
+    margin-top: 0;
+  }
+  .main .member li {
+    border-radius: 15px;
+  }
+}
+.main .member__point {
+  width: 5.5rem;
+  height: 5.25rem;
+  border-radius: 15px 0 0 15px;
+}
+.main .member__point a {
+  background-image: url(../../asset/image/point.png);
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  background-position: 50% 30%;
+  border-radius: 15px 0 0 15px;
+}
+.main .member__like {
+  width: 5.5rem;
+  height: 5.25rem;
+  border-radius: 0 15px 15px 0;
+}
+.main .member__like a {
+  background-image: url(../../asset/image/heart.png);
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  background-position: 50% 30%;
+  border-radius: 0 15px 15px 0;
+}
+.main .member__coupon {
+  width: 5.5rem;
+  height: 5.25rem;
+}
+.main .member__coupon a {
+  background-image: url(../../asset/image/ticket.png);
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  background-position: 50% 30%;
+}
+.main .member__gift {
+  width: 5.5rem;
+  height: 5.25rem;
+}
+.main .member__gift a {
+  background-image: url(../../asset/image/gift.png);
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  background-position: 50% 30%;
 }
 
 .banner {
@@ -1191,6 +1525,24 @@ main {
   width: 5rem;
   height: 5rem;
   margin-top: 0.125rem;
+}
+
+.main .fast-togo {
+  width: 100%;
+  height: 12.75rem;
+  background-image: url(../../asset/image/cat_packaging.png);
+  background-repeat: no-repeat;
+  background-size: 50% 60%;
+  background-position: 9.6875rem 5rem;
+}
+@media (min-width: 826px) {
+  .main .fast-togo {
+    grid-area: togo;
+  }
+}
+.main .fast-togo:hover {
+  background-size: 55% 65%;
+  transition: all 0.5s;
 }
 
 .fast-store p::after {

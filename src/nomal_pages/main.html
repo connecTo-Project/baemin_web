@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../js/jquery-1.12.3.js" />
+  <link rel="stylesheet" href="../js/scripts.js" />
   <title>어서오세요. 메인</title>
 </head>
 
@@ -19,9 +21,9 @@
     </h1>
     <div class="nav-wrapper">
       <button class="header__address-button">우리집</button>
-      <a class="category" href="/">cate</a>
-      <button class="header__alert-button">alert</button>
-      <a class="mypage" href="/">my</a>
+      <a class="category" href="/"></a>
+      <button class="header__alert-button"></button>
+      <a class="mypage" href="/"></a>
     </div>
     <form class="search-form" action="">
       <fieldset>
@@ -33,12 +35,12 @@
     </form>
   </header>
   <!-- 메인 -->
-  <main class="main">
+  <main id="skip" class="main">
     <section class="main__section">
       <h2 class="sr-only main__title">섹션 제목</h2>
       <article class="baeminone">
         <a class="baeminone__link" href="/">
-          <h3>배민1</h3>
+          <h3>배민</h3>
           <p>한 번에 한 집만 <span class="br">빠르게 배달해요!</span></p>
         </a>
       </article>
@@ -85,15 +87,15 @@
       <article class="special">
         <a class="special__link" href="/">
           <h3>전국별미</h3>
-          <p>닭볶음탕육회팥빵</p>
+          <p>창신동매운족발</p>
         </a>
       </article>
       <article class="ad">
         <h3 class="sr-only">광고</h3>
         <ul class="ad__list">
-          <li class="ad__item"><a href="/">광고2</a></li>
-          <li class="ad__item"><a href="/">광고1</a></li>
-          <li class="ad__item"><a href="/">광고3</a></li>
+          <li class="ad__item"><a href="/"></a></li>
+          <li class="ad__item"><a href="/"></a></li>
+          <li class="ad__item"><a href="/"></a></li>
         </ul>
       </article>
     </section>
@@ -105,24 +107,26 @@
     </ul>
   </main>
   <footer class="footer">
-    <ul class="footer__list">
-      <li><a class="footer__link" href="/">사업자정보확인</a></li>
-      <li><a class="footer__link" href="/">이용약관</a></li>
-      <li><a class="footer__link" href="/">전자금융거래이용약관</a></li>
-      <li><a class="footer__link" href="/">개인정보처리방침</a></li>
-    </ul>
-    <address class="adress">
-      <span>(주)우아한형제들</span>
-      <span>대표이사 김범준</span>
-      <span>사업자등록번호 120-87-65763</span>
-      <span>통신판매업 서울 송파-0515</span>
-      <span>호스팅서비스제공자 (주)우아한형제들</span>
-      <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
-      <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-      <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
-      <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
-    </address>
-    <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+    <div class="footer-inner">
+      <ul class="footer__list">
+        <li><a class="footer__link" href="/">사업자정보확인</a></li>
+        <li><a class="footer__link" href="/">이용약관</a></li>
+        <li><a class="footer__link" href="/">전자금융거래이용약관</a></li>
+        <li><a class="footer__link" href="/">개인정보처리방침</a></li>
+      </ul>
+      <address class="address">
+        <span>(주)우아한형제들</span>
+        <span>대표이사 김범준</span>
+        <span>사업자등록번호 120-87-65763</span>
+        <span>통신판매업 서울 송파-0515</span>
+        <span>호스팅서비스제공자 (주)우아한형제들</span>
+        <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
+        <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
+        <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
+        <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
+      </address>
+      <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+    </div>
   </footer>
 </body>
 

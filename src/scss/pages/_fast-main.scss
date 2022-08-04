@@ -1,0 +1,19 @@
+// 메인
+@use "../themes" as *;
+@use "../absrtacts" as *;
+
+.main {
+  & .fast-togo {
+    @include size(100%, rem(204px));
+    @include bg("cat_packaging.png", 50%,60%);
+    background-position: rem(155px) rem(80px);
+
+    @include tablet {
+      grid-area: togo;
+    }
+    &:hover {
+      background-size: 55% 65%;
+      transition: all 0.5s;
+    }
+  }
+}
