@@ -1,131 +1,135 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script src="../js/scripts.js"></script>
+    <title>홈 - 배달의민족</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/index.css" />
-  <script src="../js/jquery-1.12.3.js"></script>
-  <script src="../js/scripts.js"></script>
-  <title>어서오세요. 메인</title>
-</head>
-
-<body>
-  <!-- 스킵 내비 -->
-  <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
-  <!-- 헤더 -->
-  <header class="header">
-    <h1 class="header__logo">
-      <a class="logo__link" href="/"><img class="logo__img" src="../asset/image/logo.webp" alt="배달의 민족" /></a>
-    </h1>
-    <div class="nav-wrapper">
-      <button class="header__address-button">강남 미왕빌딩 11층<img src="../asset/image/dropDown.webp" alt="" /></button>
-      <a class="category" href="#"><img src="../asset/image/header_menu.webp" alt="전체 메뉴" /></a>
-      <button class="header__alert-button"><img src="../asset/image/header_alarm.webp" alt="알림" /></button>
-      <a class="mypage" href="#"><img src="../asset/image/header_mypage.webp" alt="마이페이지" /></a>
-    </div>
-    <form class="search-form" action="">
-      <fieldset>
-        <legend class="sr-only">검색 폼</legend>
-        <label class="sr-only" for="">검색</label>
-        <input class="search-form__input" placeholder="찾아라! 맛있는 음식과 맛집" type="search" />
-        <button class="search-form__button-submit" type="submit"></button>
-      </fieldset>
-    </form>
-  </header>
-  <!-- 메인 -->
-  <main id="skip" class="main">
-    <section class="main__section">
-      <h2 class="sr-only main__title">섹션 제목</h2>
-      <article class="baeminone">
-        <a class="baeminone__link" href="./menu.html">
-          <h3>배민</h3>
-          <p>한 번에 한 집만 <span class="br">빠르게 배달해요!</span></p>
-        </a>
-      </article>
-      <article class="delivery">
-        <a class="delivery__link" href="./menu.html">
-          <h3>배달</h3>
-          <p>세상은 넓고 <span class="br">맛집은 많다</span></p>
-        </a>
-      </article>
-      <article class="togo">
-        <a class="togo__link" href="./menu.html">
-          <h3>포장</h3>
-          <p>가까운 가게는 직접 가지러 가지요</p>
-        </a>
-      </article>
-      <article class="bmart">
-        <a class="bmart__link" href="#">
-          <h3>B마트</h3>
-          <p>최대3만원쿠폰 <span class="br">5일장 오픈!</span></p>
-        </a>
-      </article>
-      <article class="mealkit">
-        <a class="mealkit__link" href="#">
-          <h3>밀키트 / 간편식</h3>
-          <p>뚝딱 만드는<span class="br">근사한 한끼</span></p>
-        </a>
-      </article>
-      <article class="baeminstore">
-        <a class="baeminstore__link" href="#">
-          <h3>배민 스토어</h3>
-          <p>금/토/일 누구나 <span>1만원</span> 할인!</p>
-        </a>
-      </article>
-      <article class="shoppinglive">
-        <a class="shoppinglive__link" href="#">
-          <h3>쇼핑라이브</h3>
-        </a>
-      </article>
-      <article class="gift">
-        <a class="gift__link" href="#">
-          <h3>선물하기</h3>
-        </a>
-      </article>
-      <article class="special">
-        <a class="special__link" href="#">
-          <h3>전국별미</h3>
-          <p>창신동매운족발</p>
-        </a>
-      </article>
-      <article class="ad">
-        <h3 class="sr-only">광고</h3>
-        <ul class="ad__list">
-          <li class="ad__item"><a href="#"><img src="../asset/image/ad1.webp" alt="" class="ad__img" /></a></li>
-          <li class="ad__item"><a href="#"><img src="../asset/image/ad2.webp" alt="" class="ad__img" /></a></li>
-          <li class="ad__item"><a href="#"><img src="../asset/image/ad3.webp" alt="" class="ad__img" /></a></li>
-        </ul>
-      </article>
-    </section>
-    <ul class="member">
-      <li class="member__point"><a href="#">포인트</a></li>
-      <li class="member__coupon"><a href="#">쿠폰함</a></li>
-      <li class="member__gift"><a href="#">선물함</a></li>
-      <li class="member__like"><a href="#">찜</a></li>
-    </ul>
-  </main>
-  <footer class="footer">
-    <ul class="footer__list">
-      <li><a class="footer__link" href="#">사업자정보확인</a></li>
-      <li><a class="footer__link" href="#">이용약관</a></li>
-      <li><a class="footer__link" href="#">전자금융거래이용약관</a></li>
-      <li><a class="footer__link" href="#">개인정보처리방침</a></li>
-    </ul>
-    <address class="adress">
-      <span>(주)우아한형제들</span>
-      <span>대표이사 김범준</span>
-      <span>사업자등록번호 120-87-65763</span>
-      <span>통신판매업 서울 송파-0515</span>
-      <span>호스팅서비스제공자 (주)우아한형제들</span>
-      <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
-      <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-      <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
-      <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
-    </address>
-    <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
-  </footer>
-</body>
-
+  <body>
+    <!-- 스킵 내비 -->
+    <a href="#skip" class="skip-nav"><span>헤더 건너뛰기</span></a>
+    <!-- 헤더 -->
+    <header class="header">
+      <h1 class="header__logo">
+        <a class="logo__link" href="/baemin_web/"><img class="logo__img" src="../asset/image/logo.webp" alt="배달의 민족" /></a>
+      </h1>
+      <div class="nav-wrapper">
+        <button class="header__address-button">강남 미왕빌딩 11층<img src="../asset/image/dropDown.webp" alt="" /></button>
+        <a class="category" href="#"><img src="../asset/image/header_menu.webp" alt="전체 메뉴" /></a>
+        <button class="header__alert-button"><img src="../asset/image/header_alarm.webp" alt="알림" /></button>
+        <a class="mypage" href="#"><img src="../asset/image/header_mypage.webp" alt="마이페이지" /></a>
+      </div>
+      <form class="search-form" action="">
+        <fieldset>
+          <legend class="sr-only">검색 폼</legend>
+          <label class="sr-only" for="">검색</label>
+          <input class="search-form__input" placeholder="찾아라! 맛있는 음식과 맛집" type="search" />
+          <button class="search-form__button-submit" type="submit"></button>
+        </fieldset>
+      </form>
+    </header>
+    <!-- 메인 -->
+    <main id="skip" class="main">
+      <section class="main__section">
+        <h2 class="sr-only main__title">섹션 제목</h2>
+        <article class="baeminone">
+          <a class="baeminone__link" href="./menu.html">
+            <h3>배민</h3>
+            <p>한 번에 한 집만 <span class="br">빠르게 배달해요!</span></p>
+          </a>
+        </article>
+        <article class="delivery">
+          <a class="delivery__link" href="./menu.html">
+            <h3>배달</h3>
+            <p>세상은 넓고 <span class="br">맛집은 많다</span></p>
+          </a>
+        </article>
+        <article class="togo">
+          <a class="togo__link" href="./menu.html">
+            <h3>포장</h3>
+            <p>가까운 가게는 직접 가지러 가지요</p>
+          </a>
+        </article>
+        <article class="bmart">
+          <article class="bmart__link" href="#">
+            <h3>B마트</h3>
+            <p>최대3만원쿠폰 <span class="br">5일장 오픈!</span></p>
+          </article>
+        </article>
+        <article class="mealkit">
+          <a class="mealkit__link" href="#">
+            <h3>밀키트 / 간편식</h3>
+            <p>뚝딱 만드는<span class="br">근사한 한끼</span></p>
+          </a>
+        </article>
+        <article class="baeminstore">
+          <a class="baeminstore__link" href="#">
+            <h3>배민 스토어</h3>
+            <p>금/토/일 누구나 <span>1만원</span> 할인!</p>
+          </a>
+        </article>
+        <article class="shoppinglive">
+          <article class="shoppinglive__link" href="#">
+            <h3>쇼핑라이브</h3>
+          </article>
+        </article>
+        <article class="gift">
+          <a class="gift__link" href="#">
+            <h3>선물하기</h3>
+          </a>
+        </article>
+        <article class="special">
+          <article class="special__link" href="#">
+            <h3>전국별미</h3>
+            <p>창신동매운족발</p>
+          </article>
+        </article>
+        <article class="ad">
+          <h3 class="sr-only">광고</h3>
+          <ul class="ad__list">
+            <li class="ad__item">
+              <a href="#"><img src="../asset/image/ad1.webp" alt="" class="ad__img" /></a>
+            </li>
+            <li class="ad__item">
+              <a href="#"><img src="../asset/image/ad2.webp" alt="" class="ad__img" /></a>
+            </li>
+            <li class="ad__item">
+              <a href="#"><img src="../asset/image/ad3.webp" alt="" class="ad__img" /></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <ul class="member">
+        <li class="member__point"><a href="#">포인트</a></li>
+        <li class="member__coupon"><a href="#">쿠폰함</a></li>
+        <li class="member__gift"><a href="#">선물함</a></li>
+        <li class="member__like"><a href="#">찜</a></li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">사업자정보확인</a></li>
+        <li><a class="footer__link" href="#">이용약관</a></li>
+        <li><a class="footer__link" href="#">전자금융거래이용약관</a></li>
+        <li><a class="footer__link" href="#">개인정보처리방침</a></li>
+      </ul>
+      <address class="adress">
+        <span>(주)우아한형제들</span>
+        <span>대표이사 김범준</span>
+        <span>사업자등록번호 120-87-65763</span>
+        <span>통신판매업 서울 송파-0515</span>
+        <span>호스팅서비스제공자 (주)우아한형제들</span>
+        <span><a href="CS@woowahan.com">CS@woowahan.com</a></span>
+        <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
+        <span>전자금융분쟁처리 Tel <a href="tel:1600-0987">1600-0987</a>(유료), <a href="080-849-0987">080-849-0987</a>(무료)</span>
+        <span>Fax <a href="fax:050-6050-0400">050-6050-0400</a></span>
+      </address>
+      <p>(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+    </footer>
+  </body>
 </html>
