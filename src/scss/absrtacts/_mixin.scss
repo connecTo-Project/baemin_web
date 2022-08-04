@@ -2,11 +2,10 @@
   width: $w;
   height: $h;
 }
-@mixin bg($file, $w:100%,$h:100%){
+@mixin bg($file, $w: 100%, $h: 100%) {
   background-image: url(../../asset/image/#{$file});
   background-repeat: no-repeat;
   background-size: $w $h;
-  
 }
 
 // 여백 관련 믹스인

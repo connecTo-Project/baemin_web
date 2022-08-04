@@ -1,18 +1,19 @@
-$(function () {
+// 메뉴페이지 이미지 슬라이드
+$(document).ready(function () {
   var num = 0;
 
   setInterval(function () {
     if (num < 2) {
       num++;
-      $("ul").animate(
+      $(".banner .banner__list").animate(
         {
-          left: "-=1200",
+          left: "-=428",
         },
         "slow"
       );
     } else {
       num = 0;
-      $("ul").animate(
+      $(".banner .banner__list").animate(
         {
           left: 0,
         },

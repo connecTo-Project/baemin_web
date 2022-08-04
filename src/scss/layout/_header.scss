@@ -1,11 +1,11 @@
 @use "../themes" as *;
 @use "../absrtacts" as *;
 body {
-  background: $gray-50;
+  background: #f8f8f8;
   width: rem(428px);
   margin-left: auto;
   margin-right: auto;
-  @include tablet{
+  @include tablet {
     @include size(rem(826px));
   }
 }
@@ -29,16 +29,16 @@ button {
 // 스킵네비게이션
 .skip-nav {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   text-align: center;
   padding: 4px 0;
-  color: #fff;
+  color: $white;
   transform: translateY(-110%);
   z-index: 10;
   & span {
     display: inline-block;
     padding: 8px;
+    background: #888;
     border: 2px solid #00f;
     border-radius: 4px;
   }
@@ -50,6 +50,7 @@ button {
 
 // 헤더
 .header {
+  position: relative;
   background: $mainColor;
   padding: rem(19px);
   border-radius: 0 0 20px 20px;
@@ -59,13 +60,15 @@ button {
   }
   &__logo {
     @include size(rem(120px), rem(38px));
-    background-color: blue;
+    // background-image:
   }
   &__address-button {
-    @include size(rem(120px), rem(32px));
+    // @include size(50% rem(32px));
     background: transparent;
-    border: 0px solid black;
-    margin-top: rem(20px);
+    color: $white;
+    font-size: rem(22px);
+    font-weight: 500;
+    margin-top: rem(22px);
     text-align: left;
     margin-right: auto;
   }
@@ -73,7 +76,6 @@ button {
   &__alert-button,
   & .mypage {
     @include size(rem(32px), rem(32px));
-    // background: red;
     border: 0;
     margin-top: rem(20px);
   }
@@ -104,9 +106,15 @@ button {
   & .search-form__button-submit {
     @include size(rem(45px), rem(45px));
     @include bg("header_search.png");
+
     position: absolute;
     top: rem(1px);
     right: rem(1px);
-    border: 0;
+    background-image: url("../../asset/image/header_search.png");
+    background-size: contain;
+    transform: translate(-8px, 2px);
   }
+}
+main {
+  margin-top: -10px !important;
 }
