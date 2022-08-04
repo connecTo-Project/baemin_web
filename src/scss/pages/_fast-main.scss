@@ -5,7 +5,7 @@
 .main {
   & .fast-togo {
     @include size(100%, rem(204px));
-    @include bg("cat_packaging.png", 50%,60%);
+    @include bg("cat_packaging.webp", 50%,60%);
     background-position: rem(155px) rem(80px);
 
     @include tablet {

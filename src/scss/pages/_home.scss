@@ -15,7 +15,7 @@
   & .nomal-img {
     display: inline-block;
     @include size(rem(240px), rem(240px));
-    @include bg("mealkit_person.png");
+    @include bg("mealkit_person.webp");
     background-size: contain;
     position: absolute;
     top: -370px;
@@ -27,7 +27,7 @@
   & .quick-img {
     display: inline-block;
     @include size(rem(180px), rem(140px));
-    @include bg("cat_packaging.png");
+    @include bg("cat_packaging.webp");
     background-size: contain;
     position: absolute;
     top: -290px;
