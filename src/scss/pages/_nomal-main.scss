@@ -39,7 +39,7 @@
     }
     & .baeminone {
       @include size(rem(189px), rem(204px));
-      @include bg("mealkit_person.png", 70%, 50%);
+      @include bg("mealkit_person.webp", 70%, 50%);
       background-position-x: rem(50px);
       background-position-y: rem(105px);
       position: relative;
@@ -52,7 +52,7 @@
       }
     }
     & .baeminone::after {
-      @include bg("ddabong.png");
+      @include bg("ddabong.webp");
       content: "";
       width: rem(36px);
       height: rem(36px);
@@ -62,7 +62,7 @@
     }
     & .delivery {
       @include size(rem(189px), rem(204px));
-      @include bg("main_delivery1_background.png");
+      @include bg("main_delivery1_background.webp");
 
       @include tablet {
         grid-area: delivery;
@@ -75,7 +75,7 @@
 
     & .togo {
       @include size(100%, rem(84px));
-      @include bg("cat_packaging.png", 30%);
+      @include bg("cat_packaging.webp", 30%);
       background-position: rem(265px);
 
       @include tablet {
@@ -88,7 +88,7 @@
     }
     & .baeminstore {
       @include size(100%, rem(84px));
-      @include bg("heart_icon.png", 25%);
+      @include bg("heart_icon.webp", 25%);
       background-position: rem(285px);
 
       @include tablet {
@@ -101,7 +101,7 @@
     }
     & .bmart {
       @include size(rem(189px), rem(105));
-      @include bg("smile_pack.png", 50%);
+      @include bg("smile_pack.webp", 50%);
       background-position: rem(100px);
 
       @include tablet {
@@ -114,7 +114,7 @@
     }
     & .mealkit {
       @include size(rem(189px), rem(105));
-      @include bg("menu_type_item_11.png", 40%, 50%);
+      @include bg("menu_type_item_11.webp", 40%, 50%);
       background-position: rem(100px) rem(45px);
 
       @include tablet {
@@ -127,7 +127,7 @@
     }
     & .shoppinglive {
       @include size(rem(88px), rem(84px));
-      @include bg("shopping_live.png", 50%, 50%);
+      @include bg("shopping_live.webp", 50%, 50%);
       background-position: 50% 20%;
       & a {
         padding-left: 0;
@@ -149,7 +149,7 @@
     }
     & .gift {
       @include size(rem(88px), rem(84px));
-      @include bg("main_present.png", 30%, 50%);
+      @include bg("main_present.webp", 30%, 50%);
       background-position: 50% 20%;
 
       @include tablet {
@@ -171,7 +171,7 @@
     }
     & .special {
       @include size(rem(189px), rem(84px));
-      @include bg("menu_type_item_1.png", 35%);
+      @include bg("menu_type_item_1.webp", 35%);
       background-position: rem(120px);
 
       @include tablet {
@@ -236,7 +236,7 @@
       @include size(rem(96px), rem(87px));
       border-radius: 15px 0 0 15px;
       & a {
-        @include bg("point.png", 40%, 40%);
+        @include bg("point.webp", 40%, 40%);
         background-position: 50% 30%;
         border-radius: 15px 0 0 15px;
       }
@@ -245,7 +245,7 @@
       @include size(rem(96px), rem(87px));
       border-radius: 0 15px 15px 0;
       & a {
-        @include bg("heart.png", 40%, 40%);
+        @include bg("heart.webp", 40%, 40%);
         background-position: 50% 30%;
         border-radius: 0 15px 15px 0;
       }
@@ -253,14 +253,14 @@
     &__coupon {
       @include size(rem(96px), rem(87px));
       & a {
-        @include bg("ticket.png", 40%, 40%);
+        @include bg("ticket.webp", 40%, 40%);
         background-position: 50% 30%;
       }
     }
     &__gift {
       @include size(rem(96px), rem(87px));
       a {
-        @include bg("gift.png", 40%, 40%);
+        @include bg("gift.webp", 40%, 40%);
         background-position: 50% 30%;
       }
     }

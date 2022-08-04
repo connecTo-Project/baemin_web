@@ -145,7 +145,7 @@ main {
 
     &__star::before {
       content: "";
-      background: url("../asset/image/small_star.png") no-repeat;
+      background: url("../asset/image/small_star.webp") no-repeat;
       position: relative;
       display: inline-block;
       background-size: 12px 12px;
@@ -167,7 +167,7 @@ main {
       &::before {
         content: "";
         display: inline-block;
-        background-image: url("../asset/image/phone_call.png");
+        background-image: url("../asset/image/phone_call.webp");
         background-size: contain;
         width: rem(16px);
         height: rem(16px);
