@@ -1,3 +1,4 @@
+@use "./unit" as *;
 @mixin size($w: 0, $h: 0) {
   width: $w;
   height: $h;
@@ -154,7 +155,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 }
 
