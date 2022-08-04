@@ -539,7 +539,7 @@ button {
   position: absolute;
   top: 0.0625rem;
   right: 0.0625rem;
-  background-image: url("../asset/image/header_search.png");
+  background-image: url("../asset/image/header_search.webp");
   background-size: contain;
   transform: translate(-8px, 2px);
 }
@@ -567,7 +567,7 @@ main {
   display: inline-block;
   width: 15rem;
   height: 15rem;
-  background-image: url(../asset/image/mealkit_person.png);
+  background-image: url(../asset/image/mealkit_person.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-size: contain;
@@ -584,7 +584,7 @@ main {
   display: inline-block;
   width: 11.25rem;
   height: 8.75rem;
-  background-image: url(../asset/image/cat_packaging.png);
+  background-image: url(../asset/image/cat_packaging.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-size: contain;
@@ -672,7 +672,7 @@ main {
 .main__section .baeminone {
   width: 11.8125rem;
   height: 12.75rem;
-  background-image: url(../asset/image/mealkit_person.png);
+  background-image: url(../asset/image/mealkit_person.webp);
   background-repeat: no-repeat;
   background-size: 70% 50%;
   background-position-x: 3.125rem;
@@ -689,7 +689,7 @@ main {
   transition: all 0.5s;
 }
 .main__section .baeminone::after {
-  background-image: url(../asset/image/ddabong.png);
+  background-image: url(../asset/image/ddabong.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   content: "";
@@ -702,7 +702,7 @@ main {
 .main__section .delivery {
   width: 11.8125rem;
   height: 12.75rem;
-  background-image: url(../asset/image/main_delivery1_background.png);
+  background-image: url(../asset/image/main_delivery1_background.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -718,7 +718,7 @@ main {
 .main__section .togo {
   width: 100%;
   height: 5.25rem;
-  background-image: url(../asset/image/cat_packaging.png);
+  background-image: url(../asset/image/cat_packaging.webp);
   background-repeat: no-repeat;
   background-size: 30% 100%;
   background-position: 16.5625rem;
@@ -735,7 +735,7 @@ main {
 .main__section .baeminstore {
   width: 100%;
   height: 5.25rem;
-  background-image: url(../asset/image/heart_icon.png);
+  background-image: url(../asset/image/heart_icon.webp);
   background-repeat: no-repeat;
   background-size: 25% 100%;
   background-position: 17.8125rem;
@@ -752,7 +752,7 @@ main {
 .main__section .bmart {
   width: 11.8125rem;
   height: 6.5625rem;
-  background-image: url(../asset/image/smile_pack.png);
+  background-image: url(../asset/image/smile_pack.webp);
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: 6.25rem;
@@ -769,7 +769,7 @@ main {
 .main__section .mealkit {
   width: 11.8125rem;
   height: 6.5625rem;
-  background-image: url(../asset/image/menu_type_item_11.png);
+  background-image: url(../asset/image/menu_type_item_11.webp);
   background-repeat: no-repeat;
   background-size: 40% 50%;
   background-position: 6.25rem 2.8125rem;
@@ -786,7 +786,7 @@ main {
 .main__section .shoppinglive {
   width: 5.5rem;
   height: 5.25rem;
-  background-image: url(../asset/image/shopping_live.png);
+  background-image: url(../asset/image/shopping_live.webp);
   background-repeat: no-repeat;
   background-size: 50% 50%;
   background-position: 50% 20%;
@@ -812,7 +812,7 @@ main {
 .main__section .gift {
   width: 5.5rem;
   height: 5.25rem;
-  background-image: url(../asset/image/main_present.png);
+  background-image: url(../asset/image/main_present.webp);
   background-repeat: no-repeat;
   background-size: 30% 50%;
   background-position: 50% 20%;
@@ -838,7 +838,7 @@ main {
 .main__section .special {
   width: 11.8125rem;
   height: 5.25rem;
-  background-image: url(../asset/image/menu_type_item_1.png);
+  background-image: url(../asset/image/menu_type_item_1.webp);
   background-repeat: no-repeat;
   background-size: 35% 100%;
   background-position: 7.5rem;
@@ -911,7 +911,7 @@ main {
   border-radius: 15px 0 0 15px;
 }
 .main .member__point a {
-  background-image: url(../asset/image/point.png);
+  background-image: url(../asset/image/point.webp);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -923,7 +923,7 @@ main {
   border-radius: 0 15px 15px 0;
 }
 .main .member__like a {
-  background-image: url(../asset/image/heart.png);
+  background-image: url(../asset/image/heart.webp);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -934,7 +934,7 @@ main {
   height: 5.4375rem;
 }
 .main .member__coupon a {
-  background-image: url(../asset/image/ticket.png);
+  background-image: url(../asset/image/ticket.webp);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -944,7 +944,7 @@ main {
   height: 5.4375rem;
 }
 .main .member__gift a {
-  background-image: url(../asset/image/gift.png);
+  background-image: url(../asset/image/gift.webp);
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 50% 30%;
@@ -1016,37 +1016,37 @@ main {
 }
 
 .recommend__item:nth-child(1) {
-  background-image: url(../asset/image/recommend_img1.jpeg);
+  background-image: url(../asset/image/recommend_img1.webp);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(2) {
-  background-image: url(../asset/image/recommend_img8.jpeg);
+  background-image: url(../asset/image/recommend_img8.webp);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(3) {
-  background-image: url(../asset/image/recommend_img3.jpeg);
+  background-image: url(../asset/image/recommend_img3.webp);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(4) {
-  background-image: url(../asset/image/recommend_img4.jpeg);
+  background-image: url(../asset/image/recommend_img4.webp);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(5) {
-  background-image: url(../asset/image/recommend_img5.jpeg);
+  background-image: url(../asset/image/recommend_img5.webp);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(6) {
-  background-image: url(../asset/image/recommend_img6.jpeg);
+  background-image: url(../asset/image/recommend_img6.webp);
   background-repeat: no-repeat;
 }
 
 .recommend__item:nth-child(7) {
-  background-image: url(../asset/image/recommend_img7.jpeg);
+  background-image: url(../asset/image/recommend_img7.webp);
   background-repeat: no-repeat;
 }
 
@@ -1102,7 +1102,7 @@ main {
   border-radius: 0.9375rem;
   background: #FFFFFF;
   margin: 0 auto;
-  background: url("../asset/image/pizza-store2.png");
+  background: url("../asset/image/pizza-store2.webp");
   background-position: center -20px;
   background-size: cover;
   position: relative;
@@ -1113,7 +1113,7 @@ main {
 }
 
 .recommend-store__item:nth-child(2) {
-  background: url("../asset/image/recommend_img2.jpeg");
+  background: url("../asset/image/recommend_img2.webp");
   background-position: center -90px;
   background-size: cover;
   margin-top: 13px;
@@ -1159,7 +1159,7 @@ main {
 .recommend-store__star::before {
   content: "";
   display: inline-block;
-  background-image: url("../asset/image/small_star.png");
+  background-image: url("../asset/image/small_star.webp");
   background-size: contain;
   width: 16px;
   height: 16px;
@@ -1181,7 +1181,7 @@ main {
 .recommend-store__time::before {
   content: "";
   display: inline-block;
-  background-image: url("../asset/image/phone_call.png");
+  background-image: url("../asset/image/phone_call.webp");
   background-size: contain;
   width: 16px;
   height: 16px;
@@ -1234,7 +1234,7 @@ main {
 .store {
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../asset/image/pizza-store.jpeg");
+  background-image: url("../asset/image/pizza-store.webp");
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 15.625rem;
@@ -1281,7 +1281,7 @@ main {
 .store-info__star {
   display: inline-block;
   width: 7.1875rem;
-  background-image: url("../asset/image/yellow_star.png");
+  background-image: url("../asset/image/yellow_star.webp");
   background-size: 23px 23px;
   background-position: 0 -0.125rem;
   background-repeat: repeat-x;
@@ -1313,7 +1313,7 @@ main {
   float: left;
   width: 23px;
   height: 20px;
-  background: url("../asset/image/phone_call.png");
+  background: url("../asset/image/phone_call.webp");
   background-size: cover;
   background-position: -0.125rem -0.1875rem;
 }
@@ -1322,7 +1322,7 @@ main {
   float: left;
   width: 23px;
   height: 20px;
-  background: url("../asset/image/blank_heart_icon.png");
+  background: url("../asset/image/blank_heart_icon.webp");
   background-size: cover;
   background-position: -0.125rem -0.1875rem;
 }
@@ -1331,7 +1331,7 @@ main {
   float: left;
   width: 23px;
   height: 20px;
-  background: url("../asset/image/share_icon.png");
+  background: url("../asset/image/share_icon.webp");
   background-size: cover;
   background-position: -0.125rem -0.1875rem;
 }
@@ -1348,11 +1348,11 @@ main {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  background: url("../asset/image/double_coupon.png") no-repeat 3.75rem 0/contain, url("../../asset/image/download_icon.png") no-repeat 17.875rem 13px/20px 20px, #f6f6f6;
+  background: url("../asset/image/double_coupon.webp") no-repeat 3.75rem 0/contain, url("../../asset/image/download_icon.webp") no-repeat 17.875rem 13px/20px 20px, #f6f6f6;
 }
 @media (min-width: 826px) {
   .store__coupon {
-    background: url("../asset/image/double_coupon.png") no-repeat 14.375rem 0/contain, url("../../asset/image/download_icon.png") no-repeat 29.375rem 13px/20px 20px, #f6f6f6;
+    background: url("../asset/image/double_coupon.webp") no-repeat 14.375rem 0/contain, url("../../asset/image/download_icon.webp") no-repeat 29.375rem 13px/20px 20px, #f6f6f6;
   }
 }
 .store-order__tablist {
@@ -1476,7 +1476,7 @@ main {
   content: "";
   display: block;
   height: 6.25rem;
-  background-image: url("../asset/image/signature.png");
+  background-image: url("../asset/image/signature.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 1.875rem;
@@ -1554,7 +1554,7 @@ main {
   float: right;
   width: 30px;
   height: 20px;
-  background-image: url("../asset/image/dropDown.png");
+  background-image: url("../asset/image/dropDown.webp");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateY(-3px);
@@ -1713,7 +1713,7 @@ main {
 }
 .store-description__star::before {
   content: "";
-  background: url("../asset/image/small_star.png") no-repeat;
+  background: url("../asset/image/small_star.webp") no-repeat;
   position: relative;
   display: inline-block;
   background-size: 12px 12px;
@@ -1734,7 +1734,7 @@ main {
 .store-description__time::before {
   content: "";
   display: inline-block;
-  background-image: url("../asset/image/phone_call.png");
+  background-image: url("../asset/image/phone_call.webp");
   background-size: contain;
   width: 1rem;
   height: 1rem;
@@ -1749,7 +1749,7 @@ main {
 .main .fast-togo {
   width: 100%;
   height: 12.75rem;
-  background-image: url(../asset/image/cat_packaging.png);
+  background-image: url(../asset/image/cat_packaging.webp);
   background-repeat: no-repeat;
   background-size: 50% 60%;
   background-position: 9.6875rem 5rem;
@@ -1765,7 +1765,7 @@ main {
 }
 
 .fast-main {
-  background-image: url(../../asset/image/menu_type_background.jpg);
+  background-image: url("../../asset/image/menu_type_background.webp");
   background-size: cover;
   background-repeat: repeat;
   background-position: -5px;
@@ -1871,7 +1871,7 @@ main {
 .fast-store-info__star {
   width: 20px;
   height: 20px;
-  background-image: url("../asset/image/yellow_star.png");
+  background-image: url("../asset/image/yellow_star.webp");
   background-size: contain;
   transform: translateY(1px);
 }
@@ -1888,7 +1888,7 @@ main {
   display: inline-block;
   width: 24px;
   height: 20px;
-  background-image: url("../asset/image/dropDown.png");
+  background-image: url("../asset/image/dropDown.webp");
   background-size: contain;
   transform: rotate(-90deg) translate(-2px, -2px);
 }
@@ -1925,7 +1925,7 @@ main {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("../asset/image/dropDown.png");
+  background-image: url("../asset/image/dropDown.webp");
   background-size: contain;
   transform: rotate(-90deg) translate(-4px, -1px);
 }
