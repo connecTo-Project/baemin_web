@@ -1,4 +1,3 @@
-
 @use "../themes" as *;
 @use "../absrtacts" as *;
 body {
@@ -6,7 +5,7 @@ body {
   width: rem(428px);
   margin-left: auto;
   margin-right: auto;
-  @include tablet{
+  @include tablet {
     @include size(rem(826px));
   }
 }
@@ -116,7 +115,7 @@ button {
     position: absolute;
     top: rem(1px);
     right: rem(1px);
-    background-image: url("../../asset/image/header_search.png");
+    background-image: url("../asset/image/header_search.png");
     background-size: contain;
     transform: translate(-8px, 2px);
   }

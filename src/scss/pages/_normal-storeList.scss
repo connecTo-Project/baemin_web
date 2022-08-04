@@ -2,7 +2,6 @@
 @use "../absrtacts" as *;
 @use "../base" as *;
 
-
 main {
   padding-top: rem(10px);
   padding-bottom: rem(30px);
@@ -168,7 +167,7 @@ main {
       &::before {
         content: "";
         display: inline-block;
-        background-image: url(../asset/image/phone_call.png);
+        background-image: url("../asset/image/phone_call.png");
         background-size: contain;
         width: rem(16px);
         height: rem(16px);
@@ -177,10 +176,8 @@ main {
         left: 3px;
       }
     }
-
   }
   .store__item:last-child {
     border-bottom: none;
   }
-
 }

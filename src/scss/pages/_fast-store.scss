@@ -38,7 +38,7 @@
 
   &-info__star {
     @include size(20px, 20px);
-    background-image: url("../../asset/image/yellow_star.png");
+    background-image: url("../asset/image/yellow_star.png");
     background-size: contain;
     transform: translateY(1px);
   }
@@ -55,7 +55,7 @@
       content: "";
       display: inline-block;
       @include size(24px, 20px);
-      background-image: url("../../asset/image/dropDown.png");
+      background-image: url("../asset/image/dropDown.png");
       background-size: contain;
       transform: rotate(-90deg) translate(-2px, -2px);
     }
@@ -96,7 +96,7 @@
       content: "";
       display: inline-block;
       @include size(16px, 16px);
-      background-image: url("../../asset/image/dropDown.png");
+      background-image: url("../asset/image/dropDown.png");
       background-size: contain;
       transform: rotate(-90deg) translate(-4px, -1px);
     }
