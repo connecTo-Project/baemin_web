@@ -29,7 +29,8 @@
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
 
       & a {
-        padding: rem(17px);
+        @include paddingTL(19px, 19px);
+        // padding: rem(17px);
         display: inline-block;
         width: 100%;
         height: 100%;
@@ -191,10 +192,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        & .ad__item{
+        & .ad__item {
           float: left;
           & a {
-            padding:0;
+            padding: 0;
           }
         }
       }
@@ -213,6 +214,7 @@
     column-gap: 3px;
     & li {
       background: $white;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
       & a {
         display: inline-block;
         width: 100%;

@@ -1,10 +1,9 @@
 @use "../themes" as *;
 @use "../absrtacts" as *;
 
-
-// 상단 배너 
+// 상단 배너
 .banner {
-  width: 428px;
+  width: 100%;
   height: rem(130px);
   margin: 0 auto;
   overflow: hidden;
@@ -16,6 +15,10 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @include tablet {
+    transform: none !important;
+  }
 }
 
 .banner__item {
@@ -23,11 +26,12 @@
 }
 
 .banner__img {
-  width: 428px;
+  display: block;
+  width: rem(428px);
   height: 130px;
 }
 
-// 메뉴 추천 광고 
+// 메뉴 추천 광고
 .recommend {
   @include scroll();
   width: 428px;
@@ -129,7 +133,7 @@
   margin-top: rem(2px);
 }
 
-// 추천 가게 리스트 
+// 추천 가게 리스트
 .recommend-store__item {
   width: rem(390px);
   height: rem(242px);
