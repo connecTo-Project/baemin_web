@@ -1,8 +1,70 @@
-// p {
-//   font-size: 20px;
-// }
+@use "../absrtacts" as *;
+@use "../themes" as *;
+.mode {
+  display: flex;
+  background: #ffffff;
+  color: $white;
+  gap: rem(24px);
+  justify-content: center;
+  text-align: center;
+  font-size: rem(48px);
+  font-family: hanna;
+  text-shadow: 2px 4px 1px black;
+  position: fixed;
+  top: 50%;
+  & .nomal-img{
+    display:inline-block;
+    @include size(rem(240px),rem(240px));
+    @include bg("mealkit_person.png");
+    background-size: contain;
+    position: absolute;
+    top: -370px;
+    left: 0;
+    @include tablet{
+      left: 100px;
+    }
+  }
+  & .quick-img{
+    display:inline-block;
+    @include size(rem(180px),rem(140px));
+    @include bg("cat_packaging.png");
+    background-size: contain;
+    position: absolute;
+    top: -290px;
+    right: 0;
+    @include tablet{
+      right: 100px;
+    }
+  }
+  @include size(rem(428px));
+  @include tablet {
+    @include size(rem(826px));
+  }
+}
 
-// a {
-//   color: blue;
-//   border: 1px solid blue;
-// }
+.normal-mode,
+.quick-mode {
+  @include size(rem(300px), rem(300px));
+  background-color: $mainColor;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.16);
+  transform: translateY(-50%);
+  // border: 1px solid $black-100;
+  &:hover {
+    @include size(rem(310px),rem(310px));
+    font-size: rem(56px);
+    transition: all .5s;
+  }
+  &:focus-within{
+    outline: 2px solid rgba(blue,0.3);
+  }
+  & a {
+    @include size(100%, 100%);
+    border-radius: 15px;
+    display: inline-block;
+    padding-top: rem(102px);
+  }
+}
+.quick-mode {
+  background-color: $secondary;
+}
