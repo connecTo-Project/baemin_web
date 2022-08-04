@@ -1886,20 +1886,21 @@ main {
 .fast-store-info__ratingStar ::after {
   content: "";
   display: inline-block;
+  font-size: 0.875rem;
   width: 24px;
   height: 20px;
   background-image: url("../asset/image/dropDown.webp");
   background-size: contain;
-  transform: rotate(-90deg) translate(-2px, -2px);
+  transform: rotate(-90deg) translate(-2px, 0);
 }
 .fast-store-info__data {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.2;
   display: inline-block;
   width: 20%;
 }
 .fast-store-info__description {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   width: 75%;
 }
 .fast-store-info__description.detail::after {
@@ -1932,8 +1933,9 @@ main {
 .fast-store-category__title {
   padding: 1rem;
   background: #FFFFFF;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  border-top: 1px solid #D7D7D7;
 }
 
 .store-menu.fast {
@@ -1956,6 +1958,22 @@ main {
 .store-category__link.fast {
   display: flex;
   justify-content: space-between;
+  font-size: 1.125rem;
+}
+
+.store-nav__list.fast {
+  background: #FFFFFF;
+  margin-top: 0;
+  padding: 1.25rem 0;
+}
+@media (min-width: 826px) {
+  .store-nav__list.fast {
+    margin-bottom: 0;
+  }
+}
+
+.store-menu__description.fast {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=index.css.map */
