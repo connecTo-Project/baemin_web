@@ -6,8 +6,7 @@
 
   p::after {
     content: "";
-    width: 0;
-    height: 0;
+    @include size(0, 0);
   }
 
   .height-up {
@@ -22,14 +21,12 @@
   &-info {
     position: relative;
     background: $white;
-    border-bottom: 1px solid #d7d7d7;
+    border-bottom: 1px solid $gray-70;
     padding: rem(28px) rem(16px);
   }
 
   &-info__list {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    @include flex(row, wrap, center);
     gap: rem(12px);
   }
 
@@ -40,8 +37,7 @@
   }
 
   &-info__star {
-    width: 20px;
-    height: 20px;
+    @include size(20px, 20px);
     background-image: url("../../asset/image/yellow_star.png");
     background-size: contain;
     transform: translateY(1px);
@@ -58,8 +54,7 @@
     ::after {
       content: "";
       display: inline-block;
-      width: 24px;
-      height: 20px;
+      @include size(24px, 20px);
       background-image: url("../../asset/image/dropDown.png");
       background-size: contain;
       transform: rotate(-90deg) translate(-2px, -2px);
@@ -100,8 +95,7 @@
     &::after {
       content: "";
       display: inline-block;
-      width: 16px;
-      height: 16px;
+      @include size(16px, 16px);
       background-image: url("../../asset/image/dropDown.png");
       background-size: contain;
       transform: rotate(-90deg) translate(-4px, -1px);
