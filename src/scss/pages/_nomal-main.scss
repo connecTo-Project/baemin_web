@@ -180,30 +180,22 @@
     }
     & .ad {
       @include size(100%, rem(194px));
+      margin: 0 auto;
       overflow: hidden;
       position: relative;
       @include tablet {
         grid-area: ad;
       }
       &__list {
-        width: 100%;
+        width: 300%;
         position: absolute;
         top: 0;
         left: 0;
-      }
-      &__item {
-        // @include size(100%);
-        @include size(100%, rem(194px));
-        float: left;
-        // background: yellow;
-        &:nth-child(1) {
-          @include bg("ad1.png");
-        }
-        &:nth-child(2) {
-          @include bg("ad2.png");
-        }
-        &:nth-child(3) {
-          @include bg("ad3.png");
+        & .ad__item{
+          float: left;
+          & a {
+            padding:0;
+          }
         }
       }
     }
