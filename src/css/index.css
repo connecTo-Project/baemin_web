@@ -22,6 +22,21 @@ iframe {
   height: auto;
 }
 
+a:focus,
+input:focus {
+  outline: 3px solid blue;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 3px solid blue;
+  border-radius: 5px;
+}
+
 body,
 body::before,
 body::after,
@@ -176,7 +191,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 3px solid blue;
 }
 
 fieldset {
@@ -546,6 +561,13 @@ button {
 
 main {
   margin-top: -10px !important;
+}
+
+.logo__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.25rem;
 }
 
 .mode {
