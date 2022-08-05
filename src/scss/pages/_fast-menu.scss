@@ -1,62 +1,62 @@
 @use "../themes" as *;
 @use "../absrtacts" as *;
 
-// 메뉴 타입 선택 리스트 
-.fast-main{
-    background-image: url("../../asset/image/menu_type_background.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: -5px;
-  }
-  
-  .fast-menu-type {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 427px;
-    justify-content: space-around;
-  }
-  
-  .fast-menu-type__item {
-    text-align: center;
-  }
+// 메뉴 타입 선택 리스트
+.fast-main {
+  background-image: url("../../asset/image/menu_type_background.webp");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: -5px;
+  margin-top: -5px !important;
+}
 
-  .fast-menu-type__item:hover .fast-menu-type__image{
-    width: rem(90px);
-    height: rem(90px);
-    transition: all 500ms;
-  }
+.fast-menu-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 427px;
+  justify-content: space-around;
+}
 
-  .fast-menu-type__link {
-    display: block;
-    width: rem(140px);
-    height: rem(140px);
-    border-radius: rem(15px);
-  }
-  
-  .fast-menu-type__text {
-    font-family: hanna;
-    font-size: rem(20px);
-  }
-  
-  .fast-menu-type__image {
-    width: rem(80px);
-    height: rem(80px);
-    margin-top: rem(2px);
-  }
+.fast-menu-type__item {
+  text-align: center;
+}
 
+.fast-menu-type__item:hover .fast-menu-type__image {
+  width: rem(90px);
+  height: rem(90px);
+  transition: all 500ms;
+}
 
-@media (min-width: 826px){
+.fast-menu-type__link {
+  display: block;
+  width: rem(140px);
+  height: rem(140px);
+  border-radius: rem(15px);
+}
+
+.fast-menu-type__text {
+  font-family: hanna;
+  font-size: rem(20px);
+}
+
+.fast-menu-type__image {
+  width: rem(80px);
+  height: rem(80px);
+  margin-top: rem(2px);
+}
+
+@media (min-width: 826px) {
   .fast-menu-type {
     margin-top: 10px;
     width: rem(826px);
     justify-content: space-around;
-  } 
+  }
 
   .fast-menu-type__link {
     width: rem(160px);
     height: rem(160px);
-  } 
+  }
 
   .fast-menu-type__image {
     width: rem(100px);
@@ -64,15 +64,15 @@
     margin-top: rem(2px);
   }
 
-  .fast-menu-type__item:nth-child(11){
+  .fast-menu-type__item:nth-child(11) {
     margin-left: 7px;
   }
 
-  .fast-menu-type__item:nth-child(12){
+  .fast-menu-type__item:nth-child(12) {
     margin-right: auto;
   }
 
-  .fast-menu-type__item:hover .fast-menu-type__image{
+  .fast-menu-type__item:hover .fast-menu-type__image {
     width: rem(120px);
     height: rem(120px);
     transition: all 500ms;

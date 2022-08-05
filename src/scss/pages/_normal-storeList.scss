@@ -35,15 +35,26 @@ main {
     &:last-child {
       padding-right: rem(27px);
     }
+
+    li {
+      width: 20%;
+      height: 100%;
+      text-align: center;
+
+      &.underbar--active {
+        border-bottom: 5px solid $black-100;
+      }
+    }
   }
 
   &__link {
+    display: block;
     font-size: rem(20px);
+    padding: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
     line-height: 150%;
-    width: 100%;
     color: $gray-100;
 
     &.fast {
