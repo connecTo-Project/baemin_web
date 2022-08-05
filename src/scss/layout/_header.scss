@@ -64,6 +64,7 @@ button {
     color: $black-100;
     // background-image:
   }
+
   &__address-button {
     // @include size(50% rem(32px));
     background: transparent;
@@ -123,4 +124,12 @@ button {
 
 main {
   margin-top: -10px !important;
+}
+
+.logo {
+  &__link {
+    display: block;
+    @include size(100%, 100%);
+    padding: rem(4px);
+  }
 }

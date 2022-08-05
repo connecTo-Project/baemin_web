@@ -1,6 +1,4 @@
-
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
-
 
 html {
   scroll-behavior: smooth;
@@ -24,3 +22,19 @@ iframe {
   height: auto;
 }
 
+a:focus,
+input:focus {
+  outline: 3px solid blue;
+  border-radius: 5px;
+  // border:
+  // border-radius: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 3px solid blue;
+  border-radius: 5px;
+}
