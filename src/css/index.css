@@ -1777,6 +1777,15 @@ main {
   border-bottom: none;
 }
 
+.main .quick-heading {
+  font-size: 2.5rem;
+}
+.main .baeminone.fast::after {
+  width: 3rem;
+  height: 3rem;
+  top: 0.875rem;
+  left: 4.375rem;
+}
 .main .fast-togo {
   width: 100%;
   height: 12.75rem;
