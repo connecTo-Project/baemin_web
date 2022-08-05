@@ -3,6 +3,16 @@
 @use "../absrtacts" as *;
 
 .main {
+  .quick-heading {
+    font-size: rem(40px);
+  }
+
+  .baeminone.fast::after {
+    width: rem(48px);
+    height: rem(48px);
+    top: rem(14px);
+    left: rem(70px);
+  }
   & .fast-togo {
     @include size(100%, rem(204px));
     @include bg("cat_packaging.webp", 50%,60%);
